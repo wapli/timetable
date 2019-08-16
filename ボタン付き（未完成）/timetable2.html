@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>タイムテーブル</title>
+    </head>
+    <body>
+        <table border="0" class="table">
+            <tr>
+                <td>
+           <table border="3" class="maintable">
+               <tr>
+                   <th colspan="2" style="background-color: deepskyblue">メインステージ</th>
+                   <!--colspanはセルの結合-->
+               </tr>
+           <tr>
+           <th class="time9 time">09:00<br>-<br>10:00</th>
+           <th class="event9">
+               開会式
+               <th class="favorite">
+                    <button class="fav_button"   onclick="favorite_change();">
+                    <div  class="star" id="star">★</div>
+                    </button>
+                </th>
+            </th>
+        </tr>
+           <tr>
+                <th class="time10 time">10:00<br>-<br>11:00</th>
+                <th class="event10">あーー</th>
+                <th class="favorite">
+                        <button class="fav_button"   onclick="favorite_change();">
+                        <div  class="star" id="star">★</div>
+                        </button>
+                    </th>
+        </tr>
+           <tr>
+                <th class="time11 time">11:00<br>-<br>12:00</th>
+                <th class="event11">あーー</th>
+                <th class="favorite">
+                        <button class="fav_button"   onclick="favorite_change();">
+                        <div  class="star" id="star">★</div>
+                        </button>
+                    </th>
+            </tr>
+           <tr>
+               <th class="time12 time">12:00<br>-<br>13:00</th>
+               <th class="event12">あーー</th>
+               <th class="favorite">
+                    <button class="fav_button"   onclick="favorite_change();">
+                    <div  class="star" id="star">★</div>
+                    </button>
+                </th>
+            </tr>
+            <tr>
+                    <th class="time13 time">13:00<br>-<br>14:00</th>
+                    <th class="event13">うーー</th>
+                    <th class="favorite">
+                            <button class="fav_button"   onclick="favorite_change();">
+                            <div  class="star" id="star">★</div>
+                            </button>
+                        </th>
+                 </tr>
+                    <tr>
+                         <th class="time14 time">14:00<br>-<br>15:00</th>
+                         <th class="event14">あーー</th>
+                         <th class="favorite">
+                                <button class="fav_button"   onclick="favorite_change();">
+                                <div  class="star" id="star">★</div>
+                                </button>
+                            </th>
+                 </tr>
+                    <tr>
+                         <th class="time15 time">15:00<br>-<br>16:00</th>
+                         <th class="event15">あーー</th>
+                         <th class="favorite">
+                                <button class="fav_button"   onclick="favorite_change();">
+                                <div  class="star" id="star">★</div>
+                                </button>
+                            </th>
+                     </tr>
+                    <tr>
+                        <th class="time16 time">16:00<br>-<br>17:00</th>
+                        <th class="event16">あーー</th>
+                        <th class="favorite">
+                                <button class="fav_button"   onclick="favorite_change();">
+                                <div  class="star" id="star">★</div>
+                                </button>
+                            </th>
+                     </tr>
+                     <tr>
+                            <th class="time17 time">17:00<br>-<br>18:00</th>
+                            <th class="event17">あーー</th>
+                            <th class="favorite">
+                                    <button class="fav_button"   onclick="favorite_change();">
+                                    <div  class="star" id="star">★</div>
+                                    </button>
+                                </th>
+                         </tr>
+          
+                        </tr>
+        </table>
+    </td>
+    <td>
+        <table border="3" class="subtable">
+                <tr>
+                        <th colspan="2" style="background-color:burlywood ">サブステージ</th>
+                        <!--colspanはセルの結合-->
+                    </tr>
+            <tr>
+            <th class="time9 time">09:00<br>-<br>10:00</th>
+            <th class="event9">開会式</th>
+         </tr>
+            <tr>
+                 <th class="time10 time">10:00<br>-<br>11:00</th>
+                 <th class="event10">あーー</th>
+         </tr>
+            <tr>
+                 <th class="time11 time">11:00<br>-<br>12:00</th>
+                 <th class="event11">あーー</th>
+             </tr>
+            <tr>
+                <th class="time12 time">12:00<br>-<br>13:00</th>
+                <th class="event12">あーー</th>
+             </tr>
+             <tr>
+                     <th class="time13 time">13:00<br>-<br>14:00</th>
+                     <th class="event13">うーー</th>
+                  </tr>
+                     <tr>
+                          <th class="time14 time">14:00<br>-<br>15:00</th>
+                          <th class="event14">あーー</th>
+                  </tr>
+                     <tr>
+                          <th class="time15 time">15:00<br>-<br>16:00</th>
+                          <th class="event15">あーー</th>
+                      </tr>
+                     <tr>
+                         <th class="time16 time">16:00<br>-<br>17:00</th>
+                         <th class="event16">あーー</th>
+                      </tr>
+                      <tr>
+                             <th class="time17 time">17:00<br>-<br>18:00</th>
+                             <th class="event17">あーー</th>
+                          </tr>
+           
+                        
+         </table>
+        </td>
+    </tr>
+    </table>
+        
+        
+           <script type="text/javascript" src="clover_button.js"></script>
+        <style>
+            .table{
+         margin: 0;         /* 余白の削除 */
+        padding: 0;        /* 余白の削除 */
+        width:100%;
+        height:100%;
+        border-collapse:separate; 
+        border-spacing:100px; 
+        border:1px;
+            }
+        .maintable{
+        margin: 0;         /* 余白の削除 */
+        padding: 0;        /* 余白の削除 */
+        width:100%;
+        height:100%;
+        }
+        .subtable{
+        margin: 0;         /* 余白の削除 */
+        padding: 0;        /* 余白の削除 */
+        width:100%;
+        height:100%;
+        }
+        .time{
+            background-color: rgb(170, 167, 167);
+            width:10%;
+        }
+        .favorite{
+            width:10%;
+        }
+        
+        .fav_button{
+        width:100%;
+        height:100%;
+        }
+
+        .star{
+            position:relative; 
+            font-size: 20px;
+            color:#FFFFFF; 
+        }
+        
+        </style>
+    </body>
+</html>
