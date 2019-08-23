@@ -1,0 +1,30 @@
+.maintable{
+    margin: 0;         /* 余白の削除 */
+    padding: 0;        /* 余白の削除 */
+    width:80%;
+    height:100%;
+    border:dashed blue;
+    
+    }
+    .subtable{
+    margin: 0;         /* 余白の削除 */
+    padding: 0;        /* 余白の削除 */
+    widows: 80%;
+    height:100%;
+    border:dotted;
+    border-collapse:collapse;/*セル同士の枠線を重ねる*/
+    }
+    .Sevent{
+        border:dotted;
+    }
+    .Mevent{
+        border:dashed;
+    }
+    .time{
+        background-color: rgb(170, 167, 167);
+        width:10%;
+        border:dotted;
+    }
+    
+   .mainheader{ background-color: rgb(97, 185, 14);}
+   .subheader{background-color:burlywood;}

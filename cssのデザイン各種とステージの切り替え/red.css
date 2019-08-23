@@ -1,0 +1,70 @@
+
+    .subtable{
+        background-color:rgba(223, 137, 137, 0.459) ;
+        background:#e0ecab;
+        margin: 0;         /* 余白の削除 */
+        padding: 0;        /* 余白の削除 */
+        width:80%;
+        height:100%;
+        border: solid black thick;
+        border-collapse:collapse;
+        }
+        .Sevent{
+            background-color:rgba(176, 248, 224, 0.459) ;
+            border:double;
+           
+        }
+        .maintable{
+            background-color:rgba(182, 253, 255, 0.459) ;
+            background:#c5e9f8;
+            color:rgb(41, 38, 34);
+            position: absolute;
+            width: 80%;
+            height:100%; 
+            border-collapse: collapse;
+            table-layout: auto;
+            text-align:center;/*テーブル内のテキストを中央寄せ*/
+            }
+    .maintable tr:nth-child(odd){
+        background-color: rgb(102, 225, 247);
+        width:10%;
+    }
+    .time9{
+        background-color: #e9f3f7;
+    }
+    .time11{
+        background-color: #e9f3f7;
+    }
+    .time13{
+        background-color: #e9f3f7;
+    }
+    .time15{
+        background-color: #e9f3f7;
+    }
+    .time17{
+        background-color: #e9f3f7;
+    }
+    .time{
+        width: 10%;
+    }
+    .time10{
+        background-color: #bbbdbc;
+    }
+    .time12{
+        background-color: #bbbdbc;
+    }
+    .time14{
+        background-color: #bbbdbc;
+    }
+    .time16{
+        background-color: #bbbdbc;
+    }
+    
+    .maintable th{
+        border:none;
+    }
+    
+   .mainheader{ background-color: rgb(1, 5, 10);
+                color:#ffffff;}
+   .subheader{background-color:burlywood;
+              border:groove; }

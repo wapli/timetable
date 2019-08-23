@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>タイムテーブル</title>
+        <link rel="stylesheet" type="text/css"
+      href="style.css" href="red.css" href="blue.css" 
+      href="green.css"  id="colorstyle">
+    </head>
+    <body>
+        <button onclick="change_stage()">ステージ切り替え</button>
+        <select  onchange="changesytle('colorstyle',value);">
+                <option value="style.css">デフォルト</option>
+                <option value="red.css">赤色</option>
+               <option value="blue.css">青色</option>
+               <option value="green.css">緑色</option>
+               
+                               
+                               
+        </select>
+        
+           <table border="3" class="maintable">
+               <tr>
+                   <th colspan="2" class="mainheader" >メインステージ</th>
+                   <!--colspanはセルの結合-->
+               </tr>
+           <tr>
+           <th class="time9 time">09:00<br>-<br>10:00</th>
+           <th class="event9 Mevent">開会式
+               
+          
+        </tr>
+           <tr>
+                <th class="time10 time">10:00<br>-<br>11:00</th>
+                <th class="event10 Mevent">あーー</th>
+        </tr>
+           <tr>
+                <th class="time11 time">11:00<br>-<br>12:00</th>
+                <th class="event11 Mevent">あーー</th>
+            </tr>
+           <tr>
+               <th class="time12 time">12:00<br>-<br>13:00</th>
+               <th class="event12 Mevent">あーー</th>
+            </tr>
+            <tr>
+                    <th class="time13 time">13:00<br>-<br>14:00</th>
+                    <th class="event13 Mevent">うーー</th>
+                 </tr>
+                    <tr>
+                         <th class="time14 time">14:00<br>-<br>15:00</th>
+                         <th class="event14 Mevent">あーー</th>
+                 </tr>
+                    <tr>
+                         <th class="time15 time">15:00<br>-<br>16:00</th>
+                         <th class="event15 Mevent">あーー</th>
+                     </tr>
+                    <tr>
+                        <th class="time16 time">16:00<br>-<br>17:00</th>
+                        <th class="event16 Mevent">あーー</th>
+                     </tr>
+                     <tr>
+                            <th class="time17 time">17:00<br>-<br>18:00</th>
+                            <th class="event17 Mevent">あーー</th>
+                         </tr>
+          
+                        </tr>
+        </table>
+   
+        <table border="3" class="subtable">
+                <tr>
+                        <th colspan="2" class="subheader">サブステージ</th>
+                        <!--colspanはセルの結合-->
+                    </tr>
+            <tr>
+            <th class="time9 time">09:00<br>-<br>10:00</th>
+            <th class="event9 Sevent">開会式</th>
+         </tr>
+            <tr>
+                 <th class="time10 time">10:00<br>-<br>11:00</th>
+                 <th class="event10 Sevent">あーー</th>
+         </tr>
+            <tr>
+                 <th class="time11 time">11:00<br>-<br>12:00</th>
+                 <th class="event11 Sevent">あーー</th>
+             </tr>
+            <tr>
+                <th class="time12 time">12:00<br>-<br>13:00</th>
+                <th class="event12 Sevent">あーー</th>
+             </tr>
+             <tr>
+                     <th class="time13 time">13:00<br>-<br>14:00</th>
+                     <th class="event13 Sevent">うーー</th>
+                  </tr>
+                     <tr>
+                          <th class="time14 time">14:00<br>-<br>15:00</th>
+                          <th class="event14 Sevent">あーー</th>
+                  </tr>
+                     <tr>
+                          <th class="time15 time">15:00<br>-<br>16:00</th>
+                          <th class="event15 Sevent">あーー</th>
+                      </tr>
+                     <tr>
+                         <th class="time16 time">16:00<br>-<br>17:00</th>
+                         <th class="event16 Sevent">あーー</th>
+                      </tr>
+                      <tr>
+                             <th class="time17 time">17:00<br>-<br>18:00</th>
+                             <th class="event17 Sevent">あーー</th>
+                          </tr>
+           
+                        
+         </table>
+       
+        
+        
+        <script>
+            var i=0;
+            var judge=0;
+            var elementmain=document.getElementsByClassName("maintable");
+            var elementsub=document.getElementsByClassName("subtable");
+           
+            function change_stage(){
+                if (judge==0){
+                    
+            for( var i=0;i<elementsub.length;i++){
+                elementsub[i].style.display = "block";
+            }
+            for( var i=0;i<elementmain.length;i++){
+                elementmain[i].style.display = "none";
+            }
+            judge=1;
+        }
+        else{
+            for( var i=0;i<elementmain.length;i++){
+                elementmain[i].style.display = "block";
+            }
+            for( var i=0;i<elementsub.length;i++){
+                elementsub[i].style.display = "none";
+            }
+            judge=0;
+        }
+    }
+    for( var i=0;i<elementsub.length;i++){
+                elementsub[i].style.display = "none";
+            }
+           
+            function changesytle(cssid,cssfile) {
+    document.getElementById(cssid).href = cssfile;
+ }//色を変えるための関数です
+ 
+           
+        </script>
+        
+            
+       
+
+
+        
+    </body>
+</html>
