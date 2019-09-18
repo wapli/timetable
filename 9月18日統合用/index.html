@@ -1,0 +1,3904 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>タイムテーブル</title>
+  <link rel="stylesheet" type="text/css" href="css/timetable.css">
+  <link rel="stylesheet" type="text/css" href="lib/onsenui/css/onsen-css-components.css">
+
+</head>
+
+<body>
+  <ons-page>
+
+    <div class="segment">
+      <div class="segment__item">
+        <input type="radio" onclick="change(1)" class="segment__input" name="segment-a" checked　>
+        <div class="segment__button">メインステージ</div>
+      </div>
+      <div class="segment__item">
+        <input type="radio" onclick="change(2)" class="segment__input" name="segment-a">
+        <div class="segment__button">メモリアルステージ</div>
+      </div>
+      <div class="segment__item">
+        <input type="radio" onclick="change(3)" class="segment__input" name="segment-a">
+        <div class="segment__button">企画</div>
+      </div>
+      <div class="segment__item">
+        <input type="radio" onclick="change(4)" class="segment__input" name="segment-a">
+        <div class="segment__button">お気に入り</div>
+      </div>
+    </div>
+
+    </div>
+
+
+    <!--メインステージの詳細ページ-->
+    <div id='details0' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+
+
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        ここに開会式の内容などを書き込みます。
+        一つ一つのページにイベントの内容を書かなければならないので、
+        必然的に書く内容が多くなりプログラミングが長くなりますが
+        仕方ないかと思われます。<br>あ～あ、書くことなくなってきた。<br>
+        ちなみに、改行は＜ｂｒ＞で出来ます。ああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+        ああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+      </div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+
+
+
+
+    </div>
+    <div id='details1' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>10:00~10:30 あーー <br><br>
+        打っていて気づいたことですが未だに「あーー」とかいう
+        俺がつけた変なイベントの名前使っているんですね。<br>あくまでサンプルに
+        こんだけタイピングしているのは、イベントを押したときに開かれるタブの大きさが
+        しっかりとできているのかの確認と、単に俺のタイピング練習です。<br>
+        「開会式」と文章の量が同じくらいになってしまったのでもう少し付け足しておきます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+    <div id='details2' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>10:30~11:00<br><br>
+        なぜか10:00~10:30が三つもあるのですがどういうことでしょうか<br>
+        今回は文章を短めにしてみます
+      </div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+    <div id='details3' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        ここに開会式の内容などを書き込みます。
+        一つ一つのページにイベントの内容を書かなければならないので、
+        必然的に書く内容が多くなりプログラミングが長くなりますが
+        仕方ないかと思われます。<br>あ～あ、書くことなくなってきた。<br>
+        ちなみに、改行は＜ｂｒ＞で出来ます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+    <div id='details4' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        ここに開会式の内容などを書き込みます。
+        一つ一つのページにイベントの内容を書かなければならないので、
+        必然的に書く内容が多くなりプログラミングが長くなりますが
+        仕方ないかと思われます。<br>あ～あ、書くことなくなってきた。<br>
+        ちなみに、改行は＜ｂｒ＞で出来ます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+    <div id='details5' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        ここに開会式の内容などを書き込みます。
+        一つ一つのページにイベントの内容を書かなければならないので、
+        必然的に書く内容が多くなりプログラミングが長くなりますが
+        仕方ないかと思われます。<br>あ～あ、書くことなくなってきた。<br>
+        ちなみに、改行は＜ｂｒ＞で出来ます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>>
+    </div>
+    <div id='details6' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        ここに開会式の内容などを書き込みます。
+        一つ一つのページにイベントの内容を書かなければならないので、
+        必然的に書く内容が多くなりプログラミングが長くなりますが
+        仕方ないかと思われます。<br>あ～あ、書くことなくなってきた。<br>
+        ちなみに、改行は＜ｂｒ＞で出来ます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+
+    <div id='details7' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        ここに開会式の内容などを書き込みます。
+        一つ一つのページにイベントの内容を書かなければならないので、
+        必然的に書く内容が多くなりプログラミングが長くなりますが
+        仕方ないかと思われます。<br>あ～あ、書くことなくなってきた。<br>
+        ちなみに、改行は＜ｂｒ＞で出来ます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+
+    <div id='details8' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ8です
+      <ul>
+        <li>ページ8の中身</li>
+      </ul>
+    </div>
+
+    <div id='details9' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ9です
+      <ul>
+        <li>ページ9の中身</li>
+      </ul>
+    </div>
+    <div id='details10' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ10です
+      <ul>
+        <li>ページ10の中身</li>
+      </ul>
+    </div>
+    <div id='details11' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ11です
+      <ul>
+        <li>ページ11の中身</li>
+      </ul>
+    </div>
+    <div id='details12' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ12です
+      <ul>
+        <li>ページ12の中身</li>
+      </ul>
+    </div>
+    <div id='details13' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ13です
+      <ul>
+        <li>ページ13の中身</li>
+      </ul>
+    </div>
+    <div id='details14' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ14です
+      <ul>
+        <li>ページ14の中身</li>
+      </ul>
+    </div>
+    <div id='details15' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ15です
+      <ul>
+        <li>ページ15の中身</li>
+      </ul>
+    </div>
+
+    <div id='details16' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ16です
+      <ul>
+        <li>ページ16の中身</li>
+      </ul>
+    </div>
+    <div id='details17' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ17です
+      <ul>
+        <li>ページ17の中身</li>
+      </ul>
+    </div>
+
+    <div id='details18' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+
+
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        サブステージの詳細ページで～す
+        ここに開会式の内容などを書き込みます。
+        一つ一つのページにイベントの内容を書かなければならないので、
+        必然的に書く内容が多くなりプログラミングが長くなりますが
+        仕方ないかと思われます。<br>あ～あ、書くことなくなってきた。<br>
+        ちなみに、改行は＜ｂｒ＞で出来ます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+
+    </div>
+    <div id='details19' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>10:00~10:30 あーー <br><br>
+        打っていて気づいたことですが未だに「あーー」とかいう
+        俺がつけた変なイベントの名前使っているんですね。<br>あくまでサンプルに
+        こんだけタイピングしているのは、イベントを押したときに開かれるタブの大きさが
+        しっかりとできているのかの確認と、単に俺のタイピング練習です。<br>
+        「開会式」と文章の量が同じくらいになってしまったのでもう少し付け足しておきます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+    <div id='details20' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>10:30~11:00<br><br>
+        なぜか10:00~10:30が三つもあるのですがどういうことでしょうか<br>
+        今回は文章を短めにしてみます
+      </div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+    <div id='details21' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        ここに開会式の内容などを書き込みます。
+        一つ一つのページにイベントの内容を書かなければならないので、
+        必然的に書く内容が多くなりプログラミングが長くなりますが
+        仕方ないかと思われます。<br>あ～あ、書くことなくなってきた。<br>
+        ちなみに、改行は＜ｂｒ＞で出来ます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+    <div id='details22' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        ここに開会式の内容などを書き込みます。
+        一つ一つのページにイベントの内容を書かなければならないので、
+        必然的に書く内容が多くなりプログラミングが長くなりますが
+        仕方ないかと思われます。<br>あ～あ、書くことなくなってきた。<br>
+        ちなみに、改行は＜ｂｒ＞で出来ます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+    <div id='details23' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        ここに開会式の内容などを書き込みます。
+        一つ一つのページにイベントの内容を書かなければならないので、
+        必然的に書く内容が多くなりプログラミングが長くなりますが
+        仕方ないかと思われます。<br>あ～あ、書くことなくなってきた。<br>
+        ちなみに、改行は＜ｂｒ＞で出来ます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>>
+    </div>
+    <div id='details24' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        ここに開会式の内容などを書き込みます。
+        一つ一つのページにイベントの内容を書かなければならないので、
+        必然的に書く内容が多くなりプログラミングが長くなりますが
+        仕方ないかと思われます。<br>あ～あ、書くことなくなってきた。<br>
+        ちなみに、改行は＜ｂｒ＞で出来ます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+
+    <div id='details25' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        ここに開会式の内容などを書き込みます。
+        一つ一つのページにイベントの内容を書かなければならないので、
+        必然的に書く内容が多くなりプログラミングが長くなりますが
+        仕方ないかと思われます。<br>あ～あ、書くことなくなってきた。<br>
+        ちなみに、改行は＜ｂｒ＞で出来ます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+
+    <div id='details26' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ8です
+      <ul>
+        <li>ページ8の中身</li>
+      </ul>
+    </div>
+
+    <div id='details27' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ9です
+      <ul>
+        <li>ページ9の中身</li>
+      </ul>
+    </div>
+    <div id='details28' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ10です
+      <ul>
+        <li>ページ10の中身</li>
+      </ul>
+    </div>
+    <div id='details29' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ11です
+      <ul>
+        <li>ページ11の中身</li>
+      </ul>
+    </div>
+    <div id='details30' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ12です
+      <ul>
+        <li>ページ12の中身</li>
+      </ul>
+    </div>
+    <div id='details31' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ13です
+      <ul>
+        <li>ページ13の中身</li>
+      </ul>
+    </div>
+    <div id='details32' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ14です
+      <ul>
+        <li>ページ14の中身</li>
+      </ul>
+    </div>
+    <div id='details33' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ15です
+      <ul>
+        <li>ページ15の中身</li>
+      </ul>
+    </div>
+
+    <div id='details34' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ16です
+      <ul>
+        <li>ページ16の中身</li>
+      </ul>
+    </div>
+    <div id='details35' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ17です
+      <ul>
+        <li>ページ17の中身</li>
+      </ul>
+    </div>
+    <div id='details36' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>10:00~10:30 あーー <br><br>
+        打っていて気づいたことですが未だに「あーー」とかいう
+        俺がつけた変なイベントの名前使っているんですね。<br>あくまでサンプルに
+        こんだけタイピングしているのは、イベントを押したときに開かれるタブの大きさが
+        しっかりとできているのかの確認と、単に俺のタイピング練習です。<br>
+        「開会式」と文章の量が同じくらいになってしまったのでもう少し付け足しておきます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+    <div id='details37' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>10:30~11:00<br><br>
+        なぜか10:00~10:30が三つもあるのですがどういうことでしょうか<br>
+        今回は文章を短めにしてみます
+      </div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+    <div id='details38' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        ここに開会式の内容などを書き込みます。
+        一つ一つのページにイベントの内容を書かなければならないので、
+        必然的に書く内容が多くなりプログラミングが長くなりますが
+        仕方ないかと思われます。<br>あ～あ、書くことなくなってきた。<br>
+        ちなみに、改行は＜ｂｒ＞で出来ます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+    <div id='details39' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        ここに開会式の内容などを書き込みます。
+        一つ一つのページにイベントの内容を書かなければならないので、
+        必然的に書く内容が多くなりプログラミングが長くなりますが
+        仕方ないかと思われます。<br>あ～あ、書くことなくなってきた。<br>
+        ちなみに、改行は＜ｂｒ＞で出来ます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+    <div id='details40' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        ここに開会式の内容などを書き込みます。
+        一つ一つのページにイベントの内容を書かなければならないので、
+        必然的に書く内容が多くなりプログラミングが長くなりますが
+        仕方ないかと思われます。<br>あ～あ、書くことなくなってきた。<br>
+        ちなみに、改行は＜ｂｒ＞で出来ます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>>
+    </div>
+    <div id='details41' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        ここに開会式の内容などを書き込みます。
+        一つ一つのページにイベントの内容を書かなければならないので、
+        必然的に書く内容が多くなりプログラミングが長くなりますが
+        仕方ないかと思われます。<br>あ～あ、書くことなくなってきた。<br>
+        ちなみに、改行は＜ｂｒ＞で出来ます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+
+    <div id='details42' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        ここに開会式の内容などを書き込みます。
+        一つ一つのページにイベントの内容を書かなければならないので、
+        必然的に書く内容が多くなりプログラミングが長くなりますが
+        仕方ないかと思われます。<br>あ～あ、書くことなくなってきた。<br>
+        ちなみに、改行は＜ｂｒ＞で出来ます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+
+    <div id='details43' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ8です
+      <ul>
+        <li>ページ8の中身</li>
+      </ul>
+    </div>
+
+    <div id='details44' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ9です
+      <ul>
+        <li>ページ9の中身</li>
+      </ul>
+    </div>
+    <div id='details45' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ10です
+      <ul>
+        <li>ページ10の中身</li>
+      </ul>
+    </div>
+    <div id='details46' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ11です
+      <ul>
+        <li>ページ11の中身</li>
+      </ul>
+    </div>
+    <div id='details47' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ12です
+      <ul>
+        <li>ページ12の中身</li>
+      </ul>
+    </div>
+    <div id='details48' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ13です
+      <ul>
+        <li>ページ13の中身</li>
+      </ul>
+    </div>
+    <div id='details49' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ14です
+      <ul>
+        <li>ページ14の中身</li>
+      </ul>
+    </div>
+    <div id='details50' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ15です
+      <ul>
+        <li>ページ15の中身</li>
+      </ul>
+    </div>
+
+    <div id='details51' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ16です
+      <ul>
+        <li>ページ16の中身</li>
+      </ul>
+    </div>
+    <div id='details52' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ17です
+      <ul>
+        <li>ページ17の中身</li>
+      </ul>
+    </div>
+
+    <div id='details53' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+
+
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        サブステージの詳細ページで～す
+        ここに開会式の内容などを書き込みます。
+        一つ一つのページにイベントの内容を書かなければならないので、
+        必然的に書く内容が多くなりプログラミングが長くなりますが
+        仕方ないかと思われます。<br>あ～あ、書くことなくなってきた。<br>
+        ちなみに、改行は＜ｂｒ＞で出来ます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+
+    </div>
+    <div id='details54' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      <div class="details0-text text"><br><br>10:00~10:30 あーー <br><br>
+        打っていて気づいたことですが未だに「あーー」とかいう
+        俺がつけた変なイベントの名前使っているんですね。<br>あくまでサンプルに
+        こんだけタイピングしているのは、イベントを押したときに開かれるタブの大きさが
+        しっかりとできているのかの確認と、単に俺のタイピング練習です。<br>
+        「開会式」と文章の量が同じくらいになってしまったのでもう少し付け足しておきます。</div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+    </div>
+
+
+
+    <div id='details55' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ10です
+      <ul>
+        <li>ページ10の中身</li>
+      </ul>
+    </div>
+
+    <div id='details56' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ12です
+      <ul>
+        <li>ページ12の中身</li>
+      </ul>
+    </div>
+    <div id='details57' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ13です
+      <ul>
+        <li>ページ13の中身</li>
+      </ul>
+    </div>
+    <div id='details58' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ14です
+      <ul>
+        <li>ページ14の中身</li>
+      </ul>
+    </div>
+    <div id='details59' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ15です
+      <ul>
+        <li>ページ15の中身</li>
+      </ul>
+    </div>
+    <!-- ここからうまくいかない -->
+    <div id='details60' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ16です
+      <ul>
+        <li>ページ16の中身</li>
+      </ul>
+    </div>
+    <div id='details61' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ17です
+      <ul>
+        <li>ページ17の中身</li>
+      </ul>
+    </div>
+    <div id='details62' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ10です
+      <ul>
+        <li>ページ10の中身</li>
+      </ul>
+    </div>
+    <div id='details63' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ11です
+      <ul>
+        <li>ページ11の中身</li>
+      </ul>
+    </div>
+    <div id='details64' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ12です
+      <ul>
+        <li>ページ12の中身</li>
+      </ul>
+    </div>
+    <div id='details65' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ13です
+      <ul>
+        <li>ページ13の中身</li>
+      </ul>
+    </div>
+    <div id='details66' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ14です
+      <ul>
+        <li>ページ14の中身</li>
+      </ul>
+    </div>
+    <div id='details67' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ15です
+      <ul>
+        <li>ページ15の中身</li>
+      </ul>
+    </div>
+
+    <div id='details68' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ16です
+      <ul>
+        <li>ページ16の中身</li>
+      </ul>
+    </div>
+    <div id='details69' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ17です
+      <ul>
+        <li>ページ17の中身</li>
+      </ul>
+    </div>
+    <div id='details70' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ16です
+      <ul>
+        <li>ページ16の中身</li>
+      </ul>
+    </div>
+    <div id='details71' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+      ページ17です
+      <ul>
+        <li>ページ17の中身</li>
+      </ul>
+    </div>
+    <!-- 企画-->
+    <div id='details72' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+
+
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        眠みが深い1
+      </div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+
+
+    </div>
+
+
+
+    　　　　　 <div id='details73' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+
+
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        眠みが深い2
+      </div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+
+
+    </div>
+    <div id='details73' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+
+
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        眠みが深い3
+      </div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+
+
+    </div>
+    <div id='details74' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+
+
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        眠みが深い4
+      </div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+
+
+    </div>
+    <div id='details104' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+
+
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        眠みが深い5
+      </div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+
+
+    </div>
+    <div id='details105' class='details'>
+      <input type="button" value="閉じる" onclick="SelectPage(-1);" class="close_button">
+
+
+      <div class="details0-text text"><br><br>9:00~9:30開会式 <br><br>
+        眠みが深い6
+      </div>
+      <div class="details0-content content">
+        <img src="sample.png">
+      </div>
+
+
+    </div>
+
+
+    <ons-toolbar id="mainStageName">
+      <div class="center">メインステージ 　
+        <ons-select id="choose-main" onchange="editSelects(event,1)">
+
+          <option value="second">2日</option>
+          <option value="third">3日</option>
+        </ons-select>
+      </div>
+
+    </ons-toolbar>
+    <ons-toolbar id="subStageName">
+      <div class="center">メモリアルステージ
+        <ons-select id="choose-sub" onchange="editSelects(event,2)">
+          <option value="second">2日</option>
+          <option value="third">3日</option>
+        </ons-select>
+      </div>
+
+    </ons-toolbar>
+    <ons-toolbar id="planningName">
+      <div class="center">企画
+        <!-- <ons-select id="choose-planning" onchange="editSelects(event,3)">
+                        <option value="second">2日</option>
+                          <option value="third">3日</option>
+                          </ons-select> -->
+      </div>
+    </ons-toolbar>
+    <ons-toolbar id="favoriteName">
+      <div class="center">お気に入り
+        <ons-select id="choose-favorite" onchange="editSelects(event,4)">
+          <option value="second">2日</option>
+          <option value="third">3日</option>
+        </ons-select>
+      </div>
+    </ons-toolbar>
+
+
+    <!-- 変更部分　　赤沢ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+
+    <!--メインステージのtimetable-->
+    <div id="main">
+      <!-- 11月2日 -->
+      <div id="main1">
+
+        <tr clss=line id=line0>
+          <ul class="list">
+            <li class="event" id="js-event0">
+              <div class="time11 time" id="js-time0">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer0">
+                開会式
+                <div class="balButTr" id="js-balButTr0">
+                  <div class="balButTh" id="js-balButTh0">
+                    <button class="balLeft" id="js-balButLeft0">詳細</button><button class="balRight"
+                      id="js-balButRight0">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line1>
+          <ul class="list">
+            <li class="event" id="js-event1">
+              <div class="time11 time" id="js-time1">
+                10:30-10:00
+              </div>
+              <div class="performer" id="performer1">
+                a--
+                <div class="balButTr" id="js-balButTr1">
+                  <div class="balButTh" id="js-balButTh1">
+                    <button class="balLeft" id="js-balButLeft1">詳細</button><button class="balRight"
+                      id="js-balButRight1">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line2>
+          <ul class="list">
+            <li class="event" id="js-event2">
+              <div class="time11 time" id="js-time2">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer2">
+                a--
+                <div class="balButTr" id="js-balButTr2">
+                  <div class="balButTh" id="js-balButTh2">
+                    <button class="balLeft" id="js-balButLeft2">詳細</button><button class="balRight"
+                      id="js-balButRight2">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <tr clss=line id=line3>
+          <ul class="list">
+            <li class="event" id="js-event3">
+              <div class="time11 time" id="js-time3">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer3">
+                a--
+                <div class="balButTr" id="js-balButTr3">
+                  <div class="balButTh" id="js-balButTh3">
+                    <button class="balLeft" id="js-balButLeft3">詳細</button><button class="balRight"
+                      id="js-balButRight3">お気に入り</button>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line4>
+          <ul class="list">
+            <li class="event" id="js-event4">
+              <div class="time11 time" id="js-time4">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer4">
+                a--
+                <div class="balButTr" id="js-balButTr4">
+                  <div class="balButTh" id="js-balButTh4">
+                    <button class="balLeft" id="js-balButLeft4">詳細</button><button class="balRight"
+                      id="js-balButRight4">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line5>
+          <ul class="list">
+            <li class="event" id="js-event5">
+              <div>
+                <div class="time11 time" id="js-time5">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer5">
+                  a--
+                  <div class="balButTr" id="js-balButTr5">
+                    <div class="balButTh" id="js-balButTh5">
+                      <button class="balLeft" id="js-balButLeft5">詳細</button><button class="balRight"
+                        id="js-balButRight5">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line6>
+          <ul class="list">
+            <li class="event" id="js-event6">
+              <div>
+                <div class="time11 time" id="js-time6">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer6">
+                  a--
+                  <div class="balButTr" id="js-balButTr6">
+                    <div class="balButTh" id="js-balButTh6">
+                      <button class="balLeft" id="js-balButLeft6">詳細</button><button class="balRight"
+                        id="js-balButRight6">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line7>
+          <ul class="list">
+            <li class="event" id="js-event7">
+              <div>
+                <div class="time11 time" id="js-time7">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer7">
+                  a--
+                  <div class="balButTr" id="js-balButTr7">
+                    <div class="balButTh" id="js-balButTh7">
+                      <button class="balLeft" id="js-balButLeft7">詳細</button><button class="balRight"
+                        id="js-balButRight7">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+
+        <tr clss=line id=line8>
+          <ul class="list">
+            <li class="event" id="js-event8">
+              <div>
+                <div class="time11 time" id="js-time8">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer8">
+                  a--
+                  <div class="balButTr" id="js-balButTr8">
+                    <div class="balButTh" id="js-balButTh8">
+                      <button class="balLeft" id="js-balButLeft8">詳細</button><button class="balRight"
+                        id="js-balButRight8">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </tr>
+
+
+        <tr clss=line id=line9>
+          <ul class="list">
+            <li class="event" id="js-event9">
+              <div>
+                <div class="time11 time" id="js-time9">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer9">
+                  a--
+                  <div class="balButTr" id="js-balButTr9">
+                    <div class="balButTh" id="js-balButTh9">
+                      <button class="balLeft" id="js-balButLeft9">詳細</button><button class="balRight"
+                        id="js-balButRight9">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line10>
+          <ul class="list">
+            <li class="event" id="js-event10">
+              <div>
+                <div class="time11 time" id="js-time10">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer10">
+                  a--
+                  <div class="balButTr" id="js-balButTr10">
+                    <div class="balButTh" id="js-balButTh10">
+                      <button class="balLeft" id="js-balButLeft10">詳細</button><button class="balRight"
+                        id="js-balButRight10">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line11>
+          <ul class="list">
+            <li class="event" id="js-event11">
+              <div>
+                <div class="time11 time" id="js-time11">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer11">
+                  a--
+                  <div class="balButTr" id="js-balButTr11">
+                    <div class="balButTh" id="js-balButTh11">
+                      <button class="balLeft" id="js-balButLeft11">詳細</button><button class="balRight"
+                        id="js-balButRight11">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line12>
+          <ul class="list">
+            <li class="event" id="js-event12">
+              <div>
+                <div class="time11 time" id="js-time12">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer12">
+                  a--
+                  <div class="balButTr" id="js-balButTr12">
+                    <div class="balButTh" id="js-balButTh12">
+                      <button class="balLeft" id="js-balButLeft12">詳細</button><button class="balRight"
+                        id="js-balButRight12">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line13>
+          <ul class="list">
+            <li class="event" id="js-event13">
+              <div>
+                <div class="time11 time" id="js-time13">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer13">
+                  a--
+                  <div class="balButTr" id="js-balButTr13">
+                    <div class="balButTh" id="js-balButTh13">
+                      <button class="balLeft" id="js-balButLeft13">詳細</button><button class="balRight"
+                        id="js-balButRight13">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line14>
+          <ul class="list">
+            <li class="event" id="js-event14">
+              <div>
+                <div class="time11 time" id="js-time14">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer14">
+                  a--
+                  <div class="balButTr" id="js-balButTr14">
+                    <div class="balButTh" id="js-balButTh14">
+                      <button class="balLeft" id="js-balButLeft14">詳細</button><button class="balRight"
+                        id="js-balButRight14">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line15>
+          <ul class="list">
+            <li class="event" id="js-event15">
+              <div>
+                <div class="time11 time" id="js-time15">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer15">
+                  a--
+                  <div class="balButTr" id="js-balButTr15">
+                    <div class="balButTh" id="js-balButTh15">
+                      <button class="balLeft" id="js-balButLeft15">詳細</button><button class="balRight"
+                        id="js-balButRight15">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line16>
+          <ul class="list">
+            <li class="event" id="js-event16">
+              <div>
+                <div class="time11 time" id="js-time16">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer16">
+                  a--
+                  <div class="balButTr" id="js-balButTr16">
+                    <div class="balButTh" id="js-balButTh16">
+                      <button class="balLeft" id="js-balButLeft16">詳細</button><button class="balRight"
+                        id="js-balButRight16">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line17>
+          <ul class="list">
+            <li class="event" id="js-event17">
+              <div>
+                <div class="time11 time" id="js-time17">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer17">
+                  a--
+                  <div class="balButTr" id="js-balButTr17">
+                    <div class="balButTh" id="js-balButTh17">
+                      <button class="balLeft" id="js-balButLeft17">詳細</button><button class="balRight"
+                        id="js-balButRight17">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+      </div>
+      <!-- 11月３日 -->
+      <div id="main2">
+
+        <tr clss=line id=line18>
+          <ul class="list">
+            <li class="event" id="js-event18">
+              <div class="time11 time" id="js-time18">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer18">
+                開会式
+                <div class="balButTr" id="js-balButTr18">
+                  <div class="balButTh" id="js-balButTh18">
+                    <button class="balLeft" id="js-balButLeft18">詳細</button><button class="balRight"
+                      id="js-balButRight18">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line19>
+          <ul class="list">
+            <li class="event" id="js-event19">
+              <div class="time11 time" id="js-time19">
+                10:30-10:00
+              </div>
+              <div class="performer" id="performer19">
+                a--
+                <div class="balButTr" id="js-balButTr19">
+                  <div class="balButTh" id="js-balButTh19">
+                    <button class="balLeft" id="js-balButLeft19">詳細</button><button class="balRight"
+                      id="js-balButRight19">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line20>
+          <ul class="list">
+            <li class="event" id="js-event20">
+              <div class="time11 time" id="js-time20">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer20">
+                a--
+                <div class="balButTr" id="js-balButTr20">
+                  <div class="balButTh" id="js-balButTh20">
+                    <button class="balLeft" id="js-balButLeft20">詳細</button><button class="balRight"
+                      id="js-balButRight20">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <tr clss=line id=line21>
+          <ul class="list">
+            <li class="event" id="js-event21">
+              <div class="time11 time" id="js-time21">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer21">
+                a--
+                <div class="balButTr" id="js-balButTr21">
+                  <div class="balButTh" id="js-balButTh21">
+                    <button class="balLeft" id="js-balButLeft21">詳細</button><button class="balRight"
+                      id="js-balButRight21">お気に入り</button>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line22>
+          <ul class="list">
+            <li class="event" id="js-event22">
+              <div class="time11 time" id="js-time22">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer22">
+                a--
+                <div class="balButTr" id="js-balButTr22">
+                  <div class="balButTh" id="js-balButTh22">
+                    <button class="balLeft" id="js-balButLeft22">詳細</button><button class="balRight"
+                      id="js-balButRight22">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line23>
+          <ul class="list">
+            <li class="event" id="js-event23">
+              <div class="time11 time" id="js-time23">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer23">
+                a--
+                <div class="balButTr" id="js-balButTr23">
+                  <div class="balButTh" id="js-balButTh23">
+                    <button class="balLeft" id="js-balButLeft23">詳細</button><button class="balRight"
+                      id="js-balButRight23">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+
+        <tr clss=line id=line24>
+          <ul class="list">
+            <li class="event" id="js-event24">
+              <div class="time11 time" id="js-time24">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer24">
+                a--
+                <div class="balButTr" id="js-balButTr24">
+                  <div class="balButTh" id="js-balButTh24">
+                    <button class="balLeft" id="js-balButLeft24">詳細</button><button class="balRight"
+                      id="js-balButRight24">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line25>
+          <ul class="list">
+            <li class="event" id="js-event25">
+              <div class="time11 time" id="js-time25">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer25">
+                a--
+                <div class="balButTr" id="js-balButTr25">
+                  <div class="balButTh" id="js-balButTh25">
+                    <button class="balLeft" id="js-balButLeft25">詳細</button><button class="balRight"
+                      id="js-balButRight25">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+
+        <tr clss=line id=line26>
+          <ul class="list">
+            <li class="event" id="js-event26">
+              <div class="time11 time" id="js-time26">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer26">
+                a--
+                <div class="balButTr" id="js-balButTr26">
+                  <div class="balButTh" id="js-balButTh26">
+                    <button class="balLeft" id="js-balButLeft26">詳細</button><button class="balRight"
+                      id="js-balButRight26">お気に入り</button>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </tr>
+
+
+        <tr clss=line id=line27>
+          <ul class="list">
+            <li class="event" id="js-event27">
+              <div class="time11 time" id="js-time27">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer27">
+                a--
+                <div class="balButTr" id="js-balButTr27">
+                  <div class="balButTh" id="js-balButTh27">
+                    <button class="balLeft" id="js-balButLeft27">詳細</button><button class="balRight"
+                      id="js-balButRight27">お気に入り</button>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line28>
+          <ul class="list">
+            <li class="event" id="js-event28">
+              <div class="time11 time" id="js-time28">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer28">
+                a--
+                <div class="balButTr" id="js-balButTr28">
+                  <div class="balButTh" id="js-balButTh28">
+                    <button class="balLeft" id="js-balButLeft28">詳細</button><button class="balRight"
+                      id="js-balButRight28">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line29>
+          <ul class="list">
+            <li class="event" id="js-event29">
+              <div class="time11 time" id="js-time29">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer29">
+                a--
+                <div class="balButTr" id="js-balButTr29">
+                  <div class="balButTh" id="js-balButTh29">
+                    <button class="balLeft" id="js-balButLeft29">詳細</button><button class="balRight"
+                      id="js-balButRight29">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line30>
+          <ul class="list">
+            <li class="event" id="js-event30">
+              <div class="time11 time" id="js-time30">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer30">
+                a--
+                <div class="balButTr" id="js-balButTr30">
+                  <div class="balButTh" id="js-balButTh30">
+                    <button class="balLeft" id="js-balButLeft30">詳細</button><button class="balRight"
+                      id="js-balButRight30">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line31>
+          <ul class="list">
+            <li class="event" id="js-event31">
+              <div class="time11 time" id="js-time31">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer31">
+                a--
+                <div class="balButTr" id="js-balButTr31">
+                  <div class="balButTh" id="js-balButTh31">
+                    <button class="balLeft" id="js-balButLeft31">詳細</button><button class="balRight"
+                      id="js-balButRight31">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line31>
+          <ul class="list">
+            <li class="event" id="js-event31">
+              <div class="time11 time" id="js-time31">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer31">
+                a--
+                <div class="balButTr" id="js-balButTr31">
+                  <div class="balButTh" id="js-balButTh31">
+                    <button class="balLeft" id="js-balButLeft31">詳細</button><button class="balRight"
+                      id="js-balButRight31">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line31>
+          <ul class="list">
+            <li class="event" id="js-event31">
+              <div class="time11 time" id="js-time31">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer31">
+                a--
+                <div class="balButTr" id="js-balButTr31">
+                  <div class="balButTh" id="js-balButTh31">
+                    <button class="balLeft" id="js-balButLeft31">詳細</button><button class="balRight"
+                      id="js-balButRight31">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line32>
+          <ul class="list">
+            <li class="event" id="js-event32">
+              <div class="time11 time" id="js-time32">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer32">
+                a--
+                <div class="balButTr" id="js-balButTr32">
+                  <div class="balButTh" id="js-balButTh32">
+                    <button class="balLeft" id="js-balButLeft32">詳細</button><button class="balRight"
+                      id="js-balButRight32">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line33>
+          <ul class="list">
+            <li class="event" id="js-event33">
+              <div class="time11 time" id="js-time33">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer33">
+                a--
+                <div class="balButTr" id="js-balButTr33">
+                  <div class="balButTh" id="js-balButTh33">
+                    <button class="balLeft" id="js-balButLeft33">詳細</button><button class="balRight"
+                      id="js-balButRight33">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+
+      </div>
+
+      <!-- 下まで下がりきらないエラーを解消 -->
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+    </div>
+    <!--サブステージのtimetable-->
+    <div id="sub">
+      <!-- 11月２日 -->
+      <div id="sub1">
+        <tr clss=line id=line34>
+          <ul class="list">
+            <li class="event" id="js-event34">
+              <div class="time11 time" id="js-time34">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer34">
+                開会式
+                <div class="balButTr" id="js-balButTr34">
+                  <div class="balButTh" id="js-balButTh34">
+                    <button class="balLeft" id="js-balButLeft34">詳細</button><button class="balRight"
+                      id="js-balButRight34">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line35>
+          <ul class="list">
+            <li class="event" id="js-event35">
+              <div class="time11 time" id="js-time35">
+                10:30-10:00
+              </div>
+              <div class="performer" id="performer35">
+                a--
+                <div class="balButTr" id="js-balButTr35">
+                  <div class="balButTh" id="js-balButTh35">
+                    <button class="balLeft" id="js-balButLeft35">詳細</button><button class="balRight"
+                      id="js-balButRight35">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line36>
+          <ul class="list">
+            <li class="event" id="js-event36">
+              <div class="time11 time" id="js-time36">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer36">
+                a--
+                <div class="balButTr" id="js-balButTr36">
+                  <div class="balButTh" id="js-balButTh36">
+                    <button class="balLeft" id="js-balButLeft36">詳細</button><button class="balRight"
+                      id="js-balButRight36">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <tr clss=line id=line37>
+          <ul class="list">
+            <li class="event" id="js-event37">
+              <div class="time11 time" id="js-time37">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer37">
+                a--
+                <div class="balButTr" id="js-balButTr37">
+                  <div class="balButTh" id="js-balButTh37">
+                    <button class="balLeft" id="js-balButLeft37">詳細</button><button class="balRight"
+                      id="js-balButRight37">お気に入り</button>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line38>
+          <ul class="list">
+            <li class="event" id="js-event38">
+              <div class="time11 time" id="js-time38">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer38">
+                a--
+                <div class="balButTr" id="js-balButTr38">
+                  <div class="balButTh" id="js-balButTh38">
+                    <button class="balLeft" id="js-balButLeft38">詳細</button><button class="balRight"
+                      id="js-balButRight38">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line39>
+          <ul class="list">
+            <li class="event" id="js-event39">
+              <div>
+                <div class="time11 time" id="js-time39">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer39">
+                  a--
+                  <div class="balButTr" id="js-balButTr39">
+                    <div class="balButTh" id="js-balButTh39">
+                      <button class="balLeft" id="js-balButLeft39">詳細</button><button class="balRight"
+                        id="js-balButRight39">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line40>
+          <ul class="list">
+            <li class="event" id="js-event40">
+              <div>
+                <div class="time11 time" id="js-time40">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer40">
+                  a--
+                  <div class="balButTr" id="js-balButTr40">
+                    <div class="balButTh" id="js-balButTh40">
+                      <button class="balLeft" id="js-balButLeft40">詳細</button><button class="balRight"
+                        id="js-balButRight40">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line41>
+          <ul class="list">
+            <li class="event" id="js-event41">
+              <div>
+                <div class="time11 time" id="js-time41">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer41">
+                  a--
+                  <div class="balButTr" id="js-balButTr41">
+                    <div class="balButTh" id="js-balButTh41">
+                      <button class="balLeft" id="js-balButLeft41">詳細</button><button class="balRight"
+                        id="js-balButRight41">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+
+        <tr clss=line id=line42>
+          <ul class="list">
+            <li class="event" id="js-event42">
+              <div>
+                <div class="time11 time" id="js-time42">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer42">
+                  a--
+                  <div class="balButTr" id="js-balButTr42">
+                    <div class="balButTh" id="js-balButTh42">
+                      <button class="balLeft" id="js-balButLeft42">詳細</button><button class="balRight"
+                        id="js-balButRight42">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </tr>
+
+
+        <tr clss=line id=line43>
+          <ul class="list">
+            <li class="event" id="js-event43">
+              <div>
+                <div class="time11 time" id="js-time43">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer43">
+                  a--
+                  <div class="balButTr" id="js-balButTr43">
+                    <div class="balButTh" id="js-balButTh43">
+                      <button class="balLeft" id="js-balButLeft43">詳細</button><button class="balRight"
+                        id="js-balButRight43">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line44>
+          <ul class="list">
+            <li class="event" id="js-event44">
+              <div>
+                <div class="time11 time" id="js-time44">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer44">
+                  a--
+                  <div class="balButTr" id="js-balButTr44">
+                    <div class="balButTh" id="js-balButTh44">
+                      <button class="balLeft" id="js-balButLeft44">詳細</button><button class="balRight"
+                        id="js-balButRight44">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line45>
+          <ul class="list">
+            <li class="event" id="js-event45">
+              <div>
+                <div class="time11 time" id="js-time45">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer45">
+                  a--
+                  <div class="balButTr" id="js-balButTr45">
+                    <div class="balButTh" id="js-balButTh45">
+                      <button class="balLeft" id="js-balButLeft45">詳細</button><button class="balRight"
+                        id="js-balButRight45">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line46>
+          <ul class="list">
+            <li class="event" id="js-event46">
+              <div>
+                <div class="time11 time" id="js-time46">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer46">
+                  a--
+                  <div class="balButTr" id="js-balButTr46">
+                    <div class="balButTh" id="js-balButTh46">
+                      <button class="balLeft" id="js-balButLeft46">詳細</button><button class="balRight"
+                        id="js-balButRight46">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line46>
+          <ul class="list">
+            <li class="event" id="js-event46">
+              <div>
+                <div class="time11 time" id="js-time46">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer46">
+                  a--
+                  <div class="balButTr" id="js-balButTr46">
+                    <div class="balButTh" id="js-balButTh46">
+                      <button class="balLeft" id="js-balButLeft46">詳細</button><button class="balRight"
+                        id="js-balButRight46">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line47>
+          <ul class="list">
+            <li class="event" id="js-event47">
+              <div>
+                <div class="time11 time" id="js-time47">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer47">
+                  a--
+                  <div class="balButTr" id="js-balButTr47">
+                    <div class="balButTh" id="js-balButTh47">
+                      <button class="balLeft" id="js-balButLeft47">詳細</button><button class="balRight"
+                        id="js-balButRight47">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line48>
+          <ul class="list">
+            <li class="event" id="js-event48">
+              <div>
+                <div class="time11 time" id="js-time48">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer48">
+                  a--
+                  <div class="balButTr" id="js-balButTr48">
+                    <div class="balButTh" id="js-balButTh48">
+                      <button class="balLeft" id="js-balButLeft48">詳細</button><button class="balRight"
+                        id="js-balButRight48">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line49>
+          <ul class="list">
+            <li class="event" id="js-event49">
+              <div>
+                <div class="time11 time" id="js-time49">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer49">
+                  a--
+                  <div class="balButTr" id="js-balButTr49">
+                    <div class="balButTh" id="js-balButTh49">
+                      <button class="balLeft" id="js-balButLeft49">詳細</button><button class="balRight"
+                        id="js-balButRight49">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line50>
+          <ul class="list">
+            <li class="event" id="js-event50">
+              <div>
+                <div class="time11 time" id="js-time50">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer50">
+                  a--
+                  <div class="balButTr" id="js-balButTr50">
+                    <div class="balButTh" id="js-balButTh50">
+                      <button class="balLeft" id="js-balButLeft50">詳細</button><button class="balRight"
+                        id="js-balButRight50">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+      </div>
+      <!-- 11月３日 -->
+      <div id="sub2">
+        <tr clss=line id=line51>
+          <ul class="list">
+            <li class="event" id="js-event51">
+              <div class="time11 time" id="js-time51">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer51">
+                開会式
+                <div class="balButTr" id="js-balButTr51">
+                  <div class="balButTh" id="js-balButTh51">
+                    <button class="balLeft" id="js-balButLeft51">詳細</button><button class="balRight"
+                      id="js-balButRight51">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line52>
+          <ul class="list">
+            <li class="event" id="js-event52">
+              <div class="time11 time" id="js-time52">
+                10:30-10:00
+              </div>
+              <div class="performer" id="performer52">
+                a--
+                <div class="balButTr" id="js-balButTr52">
+                  <div class="balButTh" id="js-balButTh52">
+                    <button class="balLeft" id="js-balButLeft52">詳細</button><button class="balRight"
+                      id="js-balButRight52">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line53>
+          <ul class="list">
+            <li class="event" id="js-event53">
+              <div class="time11 time" id="js-time53">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer53">
+                a--
+                <div class="balButTr" id="js-balButTr53">
+                  <div class="balButTh" id="js-balButTh53">
+                    <button class="balLeft" id="js-balButLeft53">詳細</button><button class="balRight"
+                      id="js-balButRight53">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <tr clss=line id=line54>
+          <ul class="list">
+            <li class="event" id="js-event54">
+              <div class="time11 time" id="js-time54">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer54">
+                a--
+                <div class="balButTr" id="js-balButTr54">
+                  <div class="balButTh" id="js-balButTh54">
+                    <button class="balLeft" id="js-balButLeft54">詳細</button><button class="balRight"
+                      id="js-balButRight54">お気に入り</button>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line55>
+          <ul class="list">
+            <li class="event" id="js-event55">
+              <div class="time11 time" id="js-time55">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer55">
+                a--
+                <div class="balButTr" id="js-balButTr55">
+                  <div class="balButTh" id="js-balButTh55">
+                    <button class="balLeft" id="js-balButLeft55">詳細</button><button class="balRight"
+                      id="js-balButRight55">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line56>
+          <ul class="list">
+            <li class="event" id="js-event56">
+              <div>
+                <div class="time11 time" id="js-time56">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer56">
+                  a--
+                  <div class="balButTr" id="js-balButTr56">
+                    <div class="balButTh" id="js-balButTh56">
+                      <button class="balLeft" id="js-balButLeft56">詳細</button><button class="balRight"
+                        id="js-balButRight56">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line57>
+          <ul class="list">
+            <li class="event" id="js-event57">
+              <div>
+                <div class="time11 time" id="js-time57">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer57">
+                  a--
+                  <div class="balButTr" id="js-balButTr57">
+                    <div class="balButTh" id="js-balButTh57">
+                      <button class="balLeft" id="js-balButLeft57">詳細</button><button class="balRight"
+                        id="js-balButRight57">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line58>
+          <ul class="list">
+            <li class="event" id="js-event58">
+              <div>
+                <div class="time11 time" id="js-time58">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer58">
+                  a--
+                  <div class="balButTr" id="js-balButTr58">
+                    <div class="balButTh" id="js-balButTh58">
+                      <button class="balLeft" id="js-balButLeft58">詳細</button><button class="balRight"
+                        id="js-balButRight58">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+
+        <tr clss=line id=line59>
+          <ul class="list">
+            <li class="event" id="js-event59">
+              <div>
+                <div class="time11 time" id="js-time59">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer59">
+                  a--
+                  <div class="balButTr" id="js-balButTr59">
+                    <div class="balButTh" id="js-balButTh59">
+                      <button class="balLeft" id="js-balButLeft59">詳細</button><button class="balRight"
+                        id="js-balButRight59">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </tr>
+
+
+        <tr clss=line id=line60>
+          <ul class="list">
+            <li class="event" id="js-event60">
+              <div>
+                <div class="time11 time" id="js-time60">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer60">
+                  a--
+                  <div class="balButTr" id="js-balButTr60">
+                    <div class="balButTh" id="js-balButTh60">
+                      <button class="balLeft" id="js-balButLeft60">詳細</button><button class="balRight"
+                        id="js-balButRight60">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line61>
+          <ul class="list">
+            <li class="event" id="js-event61">
+              <div>
+                <div class="time11 time" id="js-time61">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer61">
+                  a--
+                  <div class="balButTr" id="js-balButTr61">
+                    <div class="balButTh" id="js-balButTh61">
+                      <button class="balLeft" id="js-balButLeft61">詳細</button><button class="balRight"
+                        id="js-balButRight61">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line62>
+          <ul class="list">
+            <li class="event" id="js-event62">
+              <div>
+                <div class="time11 time" id="js-time62">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer62">
+                  a--
+                  <div class="balButTr" id="js-balButTr62">
+                    <div class="balButTh" id="js-balButTh62">
+                      <button class="balLeft" id="js-balButLeft62">詳細</button><button class="balRight"
+                        id="js-balButRight62">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line63>
+          <ul class="list">
+            <li class="event" id="js-event63">
+              <div>
+                <div class="time11 time" id="js-time63">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer63">
+                  a--
+                  <div class="balButTr" id="js-balButTr63">
+                    <div class="balButTh" id="js-balButTh63">
+                      <button class="balLeft" id="js-balButLeft63">詳細</button><button class="balRight"
+                        id="js-balButRight63">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line64>
+          <ul class="list">
+            <li class="event" id="js-event64">
+              <div>
+                <div class="time11 time" id="js-time64">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer64">
+                  a--
+                  <div class="balButTr" id="js-balButTr64">
+                    <div class="balButTh" id="js-balButTh64">
+                      <button class="balLeft" id="js-balButLeft64">詳細</button><button class="balRight"
+                        id="js-balButRight64">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line65>
+          <ul class="list">
+            <li class="event" id="js-event65">
+              <div>
+                <div class="time11 time" id="js-time65">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer65">
+                  a--
+                  <div class="balButTr" id="js-balButTr65">
+                    <div class="balButTh" id="js-balButTh65">
+                      <button class="balLeft" id="js-balButLeft65">詳細</button><button class="balRight"
+                        id="js-balButRight65">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line66>
+          <ul class="list">
+            <li class="event" id="js-event66">
+              <div>
+                <div class="time11 time" id="js-time66">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer66">
+                  a--
+                  <div class="balButTr" id="js-balButTr66">
+                    <div class="balButTh" id="js-balButTh66">
+                      <button class="balLeft" id="js-balButLeft66">詳細</button><button class="balRight"
+                        id="js-balButRight66">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line67>
+          <ul class="list">
+            <li class="event" id="js-event67">
+              <div>
+                <div class="time11 time" id="js-time67">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer67">
+                  a--
+                  <div class="balButTr" id="js-balButTr67">
+                    <div class="balButTh" id="js-balButTh67">
+                      <button class="balLeft" id="js-balButLeft67">詳細</button><button class="balRight"
+                        id="js-balButRight67">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=line68>
+          <ul class="list">
+            <li class="event" id="js-event68">
+              <div>
+                <div class="time11 time" id="js-time68">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="performer68">
+                  a--
+                  <div class="balButTr" id="js-balButTr68">
+                    <div class="balButTh" id="js-balButTh68">
+                      <button class="balLeft" id="js-balButLeft68">詳細</button><button class="balRight"
+                        id="js-balButRight68">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <!-- ここまで修正　　　赤沢ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+
+    <div id="planning">
+      <div id="planning1">
+        <table class="kikaku-table">
+          <tr class="adult" id="adult">
+            <th class="adult-title" colspan="2">
+              <p>学部企画＆イベント・講演会</p>
+            </th>
+          </tr>
+          <tr>
+            <td class="kikaku1 kikaku">
+              <u> <a onclick="SelectPage(72);">チャペル・コンサート<br>
+                  ~あたたかな響きで奏でられる名曲たち~</a></u><br><br>
+              同志社京田辺会堂 言館礼拝堂
+              11/2(日)13:00~14:00<br><br>
+            </td>
+
+            <td class="kikaku2 kikaku">
+              <u> <a onclick="SelectPage(73)">同志社京田辺会堂 礼拝堂・展示公開</a></u><br><br>
+              11/2(日)9:00~16:00<br>
+              11/3(日)9:00~16:00<br><br>
+              同志社京田辺会堂 言館礼拝堂、光館ラウンジ
+            </td>
+          </tr>
+
+          <tr>
+            <td class="kikaku3 kikaku">
+              <u> <a onclick="SelectPage(74)"> 世界の中でカシャ<br>
+                  ~名探偵アメちゃん~</a></u><br><br>
+              11/2(土)12:30~16:00<br>
+              11/3(日)10:00~15:30<br>
+              知真館 1 号館 114 教室
+            </td>
+
+            <td class="kikaku4 kikaku">
+              <u><a onclick="SelectPage(75)">論文への道すじ<br>
+                  思想家と探る論文の輪郭展示 / ツアー</a></u><br><br>
+              11/2(日)12:30~17:00<br>
+              館内ツアー 13:00~15:00<br>
+              11/3(日)9:00~16:00<br>
+              館内ツアー 13:00~15:00<br>
+              ラーネッド記念図書館 2F 展示室</td>
+          </tr>
+
+          <tr>
+            <td class="kikaku5 kikaku">
+              <u><a onclick="SelectPage(76)"> 人生はゲームだ !</a></u><br><br>
+              11/2(土)13:00~16:00<br>
+              11/3(日)10:30~14:30<br>
+              知真館 1 号館 113 教室
+            </td>
+
+            <td class="kikaku6 kikaku">
+              <u><a onclick="SelectPage(77)">プログラミング体験<br>
+                  ロボットとドローンを<br>
+                  制御してみよう!!!</a></u><br><br>
+              11/2(日)14:00~17:00<br>
+              11/3(日)13:00~16:00<br>
+              知真館 1 号館 106 教室</td>
+          </tr>
+
+
+        </table>
+
+      </div>
+      <div id="planning2">
+        かきくけこ
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+
+
+    <div id="favorite">
+      <div id="fav-main1">
+
+
+        <tr class=line id=fav-line0>
+          <ul class="list">
+            <li class="event" id="fav-event0">
+              <div>
+                <div class="time11 time" id="fav-js-time0">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer0">
+                  お気に入りのメインの開会式
+                  <div class="balButTr" id="fav-js-balButTr0">
+                    <div class="balButTh" id="fav-js-balButTh0">
+                      <button class="balLeft" id="fav-js-balButLeft0">詳細</button><button class="balRight"
+                        id="fav-js-balButRight0">お気に入り</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr1">
+          <div class="balButTh" id="fav-js-balButTh1">
+            <button class="balLeft" id="fav-js-balButLeft1">詳細</button><button class="balRight"
+              id="fav-js-balButRight1">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line1>
+          <ul class="list">
+            <li class="event" id="fav-js-event1">
+              <div>
+                <div class="time11 time" id="fav-js-time1">
+                  10:30-10:00
+                </div>
+                <div class="performer" id="fav-performer1">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr2">
+          <div class="balButTh" id="fav-js-balButTh2">
+            <button class="balLeft" id="fav-js-balButLeft2">詳細</button><button class="balRight"
+              id="fav-js-balButRight2">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-0line2>
+          <ul class="list">
+            <li class="event" id="fav-js-event2">
+              <div>
+                <div class="time11 time" id="fav-js-time2">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer2">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr3">
+          <div class="balButTh" id="fav-js-balButTh3">
+            <button class="balLeft" id="fav-js-balButLeft3">詳細</button><button class="balRight"
+              id="fav-js-balButRight3">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line3>
+          <ul class="list">
+            <li class="event" id="fav-js-event3">
+              <div>
+                <div class="time11 time" id="fav-js-time3">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer3">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr4">
+          <div class="balButTh" id="fav-js-balButTh4">
+            <button class="balLeft" id="fav-js-balButLeft4">詳細</button><button class="balRight"
+              id="fav-js-balButRight4">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line4>
+          <ul class="list">
+            <li class="event" id="fav-js-event4">
+              <div>
+                <div class="time11 time" id="fav-js-time4">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer4">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr5">
+          <div class="balButTh" id="fav-js-balButTh5">
+            <button class="balLeft" id="fav-js-balButLeft5">詳細</button><button class="balRight"
+              id="fav-js-balButRight5">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line5>
+          <ul class="list">
+            <li class="event" id="fav-js-event5">
+              <div>
+                <div class="time11 time" id="fav-js-time5">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer5">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr6">
+          <div class="balButTh" id="fav-js-balButTh6">
+            <button class="balLeft" id="fav-js-balButLeft6">詳細</button><button class="balRight"
+              id="fav-js-balButRight6">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line6>
+          <ul class="list">
+            <li class="event" id="fav-js-event6">
+              <div>
+                <div class="time11 time" id="fav-js-time6">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer6">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr7">
+          <div class="balButTh" id="fav-js-balButTh7">
+            <button class="balLeft" id="fav-js-balButLeft7">詳細</button><button class="balRight"
+              id="fav-js-balButRight7">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line7>
+          <ul class="list">
+            <li class="event" id="fav-js-event7">
+              <div>
+                <div class="time11 time" id="fav-js-time7">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer7">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr8">
+          <div class="balButTh" id="fav-js-balButTh8">
+            <button class="balLeft" id="fav-js-balButLeft8">詳細</button><button class="balRight"
+              id="fav-js-balButRight8">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line8>
+          <ul class="list">
+            <li class="event" id="fav-js-event8">
+              <div>
+                <div class="time11 time" id="fav-js-time8">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer8">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr9">
+          <div class="balButTh" id="fav-js-balButTh9">
+            <button class="balLeft" id="fav-js-balButLeft9">詳細</button><button class="balRight"
+              id="fav-js-balButRight9">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line9>
+          <ul class="list">
+            <li class="event" id="fav-js-event9">
+              <div>
+                <div class="time11 time" id="fav-js-time9">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer9">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr10">
+          <div class="balButTh" id="fav-js-balButTh10">
+            <button class="balLeft" id="fav-js-balButLeft10">詳細</button><button class="balRight"
+              id="fav-js-balButRight10">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=line10>
+          <ul class="list">
+            <li class="event" id="fav-js-event10">
+              <div>
+                <div class="time11 time" id="fav-js-time10">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer10">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr11">
+          <div class="balButTh" id="fav-js-balButTh11">
+            <button class="balLeft" id="fav-js-balButLeft11">詳細</button><button class="balRight"
+              id="fav-js-balButRight11">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line11>
+          <ul class="list">
+            <li class="event" id="fav-js-event11">
+              <div>
+                <div class="time11 time" id="fav-js-time11">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer11">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr12">
+          <div class="balButTh" id="fav-js-balButTh12">
+            <button class="balLeft" id="fav-js-balButLeft12">詳細</button><button class="balRight"
+              id="fav-js-balButRight12">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line12>
+          <ul class="list">
+            <li class="event" id="fav-js-event12">
+              <div>
+                <div class="time11 time" id="fav-js-time12">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer12">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr13">
+          <div class="balButTh" id="fav-js-balButTh13">
+            <button class="balLeft" id="fav-js-balButLeft13">詳細</button><button class="balRight"
+              id="fav-js-balButRight13">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line13>
+          <ul class="list">
+            <li class="event" id="fav-js-event13">
+              <div>
+                <div class="time11 time" id="fav-js-time13">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer13">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr14">
+          <div class="balButTh" id="fav-js-balButTh14">
+            <button class="balLeft" id="fav-js-balButLeft14">詳細</button><button class="balRight"
+              id="fav-js-balButRight14">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line14>
+          <ul class="list">
+            <li class="event" id="fav-js-event14">
+              <div>
+                <div class="time11 time" id="fav-js-time14">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer14">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr15">
+          <div class="balButTh" id="fav-js-balButTh15">
+            <button class="balLeft" id="fav-js-balButLeft15">詳細</button><button class="balRight"
+              id="fav-js-balButRight15">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line15>
+          <ul class="list">
+            <li class="event" id="fav-js-event15">
+              <div>
+                <div class="time11 time" id="fav-js-time15">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer15">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr16">
+          <div class="balButTh" id="fav-js-balButTh16">
+            <button class="balLeft" id="jfav-s-balButLeft16">詳細</button><button class="balRight"
+              id="fav-js-balButRight16">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line16>
+          <ul class="list">
+            <li class="event" id="fav-js-event16">
+              <div>
+                <div class="time11 time" id="fav-js-time16">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer16">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr17">
+          <div class="balButTh" id="fav-js-balButTh17">
+            <button class="balLeft" id="fav-js-balButLeft17">詳細</button><button class="balRight"
+              id="fav-js-balButRight17">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line17>
+          <ul class="list">
+            <li class="event" id="fav-js-event17">
+              <div>
+                <div class="time11 time" id="fav-js-time17">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer17">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+      </div>
+
+      <div id="fav-main2">
+
+        <tr clss=line id=fav-line18>
+          <ul class="list">
+            <li class="event" id="fav-js-event18">
+              <div class="time11 time" id="fav-js-time18">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer18">
+                開会式
+                <div class="balButTr" id="fav-js-balButTr18">
+                  <div class="balButTh" id="fav-js-balButTh18">
+                    <button class="balLeft" id="fav-js-balButLeft18">詳細</button><button class="balRight"
+                      id="fav-js-balButRight18">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=fav-line19>
+          <ul class="list">
+            <li class="event" id="fav-js-event19">
+              <div class="time11 time" id="fav-js-time19">
+                10:30-10:00
+              </div>
+              <div class="performer" id="fav-performer19">
+                a--
+                <div class="balButTr" id="fav-js-balButTr19">
+                  <div class="balButTh" id="fav-js-balButTh19">
+                    <button class="balLeft" id="fav-js-balButLeft19">詳細</button><button class="balRight"
+                      id="fav-js-balButRight19">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=fav-line20>
+          <ul class="list">
+            <li class="event" id="fav-js-event20">
+              <div class="time11 time" id="fav-js-time20">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer20">
+                a--
+                <div class="balButTr" id="fav-js-balButTr20">
+                  <div class="balButTh" id="fav-js-balButTh20">
+                    <button class="balLeft" id="fav-js-balButLeft20">詳細</button><button class="balRight"
+                      id="fav-js-balButRight20">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <tr clss=line id=fav-line21>
+          <ul class="list">
+            <li class="event" id="fav-js-event21">
+              <div class="time11 time" id="fav-js-time21">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer21">
+                a--
+                <div class="balButTr" id="fav-js-balButTr21">
+                  <div class="balButTh" id="fav-js-balButTh21">
+                    <button class="balLeft" id="fav-js-balButLeft21">詳細</button><button class="balRight"
+                      id="fav-js-balButRight21">お気に入り</button>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=fav-line22>
+          <ul class="list">
+            <li class="event" id="fav-js-event22">
+              <div class="time11 time" id="fav-js-time22">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer22">
+                a--
+                <div class="balButTr" id="fav-js-balButTr22">
+                  <div class="balButTh" id="fav-js-balButTh22">
+                    <button class="balLeft" id="fav-js-balButLeft22">詳細</button><button class="balRight"
+                      id="fav-js-balButRight22">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=fav-line23>
+          <ul class="list">
+            <li class="event" id="fav-js-event23">
+              <div class="time11 time" id="fav-js-time23">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer23">
+                a--
+                <div class="balButTr" id="fav-js-balButTr23">
+                  <div class="balButTh" id="fav-js-balButTh23">
+                    <button class="balLeft" id="fav-js-balButLeft23">詳細</button><button class="balRight"
+                      id="fav-js-balButRight23">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+
+        <tr clss=line id=fav-line24>
+          <ul class="list">
+            <li class="event" id="fav-js-event24">
+              <div class="time11 time" id="fav-js-time24">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer24">
+                a--
+                <div class="balButTr" id="fav-js-balButTr24">
+                  <div class="balButTh" id="fav-js-balButTh24">
+                    <button class="balLeft" id="fav-js-balButLeft24">詳細</button><button class="balRight"
+                      id="fav-js-balButRight24">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=fav-line25>
+          <ul class="list">
+            <li class="event" id="fav-js-event25">
+              <div class="time11 time" id="fav-js-time25">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer25">
+                a--
+                <div class="balButTr" id="fav-js-balButTr25">
+                  <div class="balButTh" id="fav-js-balButTh25">
+                    <button class="balLeft" id="fav-js-balButLeft25">詳細</button><button class="balRight"
+                      id="fav-js-balButRight25">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+
+        <tr clss=line id=line26>
+          <ul class="list">
+            <li class="event" id="fav-js-event26">
+              <div class="time11 time" id="fav-js-time26">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer26">
+                a--
+                <div class="balButTr" id="fav-js-balButTr26">
+                  <div class="balButTh" id="fav-js-balButTh26">
+                    <button class="balLeft" id="fav-js-balButLeft26">詳細</button><button class="balRight"
+                      id="fav-js-balButRight26">お気に入り</button>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </tr>
+
+
+        <tr clss=line id=fav-line27>
+          <ul class="list">
+            <li class="event" id="fav-js-event27">
+              <div class="time11 time" id="fav-js-time27">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer27">
+                a--
+                <div class="balButTr" id="fav-js-balButTr27">
+                  <div class="balButTh" id="fav-js-balButTh27">
+                    <button class="balLeft" id="fav-js-balButLeft27">詳細</button><button class="balRight"
+                      id="fav-js-balButRight27">お気に入り</button>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=fav-line28>
+          <ul class="list">
+            <li class="event" id="fav-js-event28">
+              <div class="time11 time" id="fav-js-time28">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer28">
+                a--
+                <div class="balButTr" id="fav-js-balButTr28">
+                  <div class="balButTh" id="fav-js-balButTh28">
+                    <button class="balLeft" id="fav-js-balButLeft28">詳細</button><button class="balRight"
+                      id="fav-js-balButRight28">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=fav-line29>
+          <ul class="list">
+            <li class="event" id="fav-js-event29">
+              <div class="time11 time" id="fav-js-time29">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer29">
+                a--
+                <div class="balButTr" id="fav-js-balButTr29">
+                  <div class="balButTh" id="fav-js-balButTh29">
+                    <button class="balLeft" id="fav-js-balButLeft29">詳細</button><button class="balRight"
+                      id="fav-js-balButRight29">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=fav-line30>
+          <ul class="list">
+            <li class="event" id="fav-js-event30">
+              <div class="time11 time" id="fav-js-time30">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer30">
+                a--
+                <div class="balButTr" id="fav-js-balButTr30">
+                  <div class="balButTh" id="fav-js-balButTh30">
+                    <button class="balLeft" id="fav-jfav-s-balButLeft30">詳細</button><button class="balRight"
+                      id="fav-js-balButRight30">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=fav-line31>
+          <ul class="list">
+            <li class="event" id="fav-js-event31">
+              <div class="time11 time" id="fav-js-time31">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer31">
+                a--
+                <div class="balButTr" id="fav-js-balButTr31">
+                  <div class="balButTh" id="fav-js-balButTh31">
+                    <button class="balLeft" id="fav-js-balButLeft31">詳細</button><button class="balRight"
+                      id="fav-js-balButRight31">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=fav-line31>
+          <ul class="list">
+            <li class="event" id="fav-js-event31">
+              <div class="time11 time" id="fav-js-time31">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer31">
+                a--
+                <div class="balButTr" id="fav-js-balButTr31">
+                  <div class="balButTh" id="fav-js-balButTh31">
+                    <button class="balLeft" id="fav-js-balButLeft31">詳細</button><button class="balRight"
+                      id="fav-js-balButRight31">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=fav-line31>
+          <ul class="list">
+            <li class="event" id="fav-js-event31">
+              <div class="time11 time" id="fav-js-time31">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer31">
+                a--
+                <div class="balButTr" id="fav-js-balButTr31">
+                  <div class="balButTh" id="fav-js-balButTh31">
+                    <button class="balLeft" id="fav-js-balButLeft31">詳細</button><button class="balRight"
+                      id="fav-js-balButRight31">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=fav-line32>
+          <ul class="list">
+            <li class="event" id="fav-js-event32">
+              <div class="time11 time" id="fav-js-time32">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer32">
+                a--
+                <div class="balButTr" id="fav-js-balButTr32">
+                  <div class="balButTh" id="fav-js-balButTh32">
+                    <button class="balLeft" id="fav-js-balButLeft32">詳細</button><button class="balRight"
+                      id="fav-js-balButRight32">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <tr clss=line id=fav-line33>
+          <ul class="list">
+            <li class="event" id="fav-js-event33">
+              <div class="time11 time" id="fav-js-time33">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer33">
+                a--
+                <div class="balButTr" id="fav-js-balButTr33">
+                  <div class="balButTh" id="fav-js-balButTh33">
+                    <button class="balLeft" id="fav-js-balButLeft33">詳細</button><button class="balRight"
+                      id="fav-js-balButRight33">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+    <!-- 下まで下がりきらないエラーを解消 -->
+
+
+
+    <!--お気に入りのサブステージのtimetable-->
+    <div id="fav-sub">
+      <div id="fav-sub1">
+        <div class="balButTr" id="fav-js-balButTr18">
+          <div class="balButTh" id="fav-js-balButTh18">
+            <button class="balLeft" id="fav-js-balButLeft18">詳細</button><button class="balRight"
+              id="fav-js-balButRight18">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line18>
+          <!--<ul class="list">-->
+          <li class="event" id="fav-js-event18">
+            <div>
+              <div class="time11 time" id="fav-js-time18">
+                10:00-10:30
+              </div>
+
+              <div class="performer" id="fav-performer18">
+                お気に入りのサブの開会式
+              </div>
+            </div>
+          </li>
+          <!--</ul>-->
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr19">
+          <div class="balButTh" id="fav-js-balButTh19">
+            <button class="balLeft" id="fav-js-balButLeft19">詳細</button><button class="balRight"
+              id="fav-js-balButRight19">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line19>
+          <ul class="list">
+            <li class="event" id="fav-js-event19">
+              <div>
+                <div class="time11 time" id="fav-js-time19">
+                  10:30-10:00
+                </div>
+                <div class="performer" id="fav-performer19">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr20">
+          <div class="balButTh" id="fav-js-balButTh20">
+            <button class="balLeft" id="fav-js-balButLeft20">詳細</button><button class="balRight"
+              id="fav-js-balButRight20">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line20>
+          <ul class="list">
+            <li class="event" id="fav-js-event20">
+              <div>
+                <div class="time11 time" id="fav-js-time20">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer20">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr21">
+          <div class="balButTh" id="fav-js-balButTh21">
+            <button class="balLeft" id="fav-js-balButLeft21">詳細</button><button class="balRight"
+              id="fav-js-balButRight21">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line21>
+          <ul class="list">
+            <li class="event" id="fav-js-event21">
+              <div>
+                <div class="time11 time" id="fav-js-time21">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer21">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr22">
+          <div class="balButTh" id="fav-js-balButTh22">
+            <button class="balLeft" id="fav-js-balButLeft22">詳細</button><button class="balRight"
+              id="fav-js-balButRight22">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line22>
+          <ul class="list">
+            <li class="event" id="fav-js-event22">
+              <div>
+                <div class="time11 time" id="fav-js-time22">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer22">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr23">
+          <div class="balButTh" id="fav-js-balButTh23">
+            <button class="balLeft" id="fav-js-balButLeft23">詳細</button><button class="balRight"
+              id="fav-js-balButRight23">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line23>
+          <ul class="list">
+            <li class="event" id="fav-js-event23">
+              <div>
+                <div class="time11 time" id="fav-js-time23">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer23">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr24">
+          <div class="balButTh" id="fav-js-balButTh24">
+            <button class="balLeft" id="fav-js-balButLeft24">詳細</button><button class="balRight"
+              id="fav-js-balButRight24">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line24>
+          <ul class="list">
+            <li class="event" id="fav-js-event24">
+              <div>
+                <div class="time11 time" id="fav-js-time24">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer24">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr25">
+          <div class="balButTh" id="fav-js-balButTh25">
+            <button class="balLeft" id="fav-js-balButLeft25">詳細</button><button class="balRight"
+              id="fav-js-balButRight25">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line25>
+          <ul class="list">
+            <li class="event" id="fav-js-event25">
+              <div>
+                <div class="time11 time" id="fav-js-time25">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer25">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr26">
+          <div class="balButTh" id="fav-js-balButTh26">
+            <button class="balLeft" id="fav-js-balButLeft26">詳細</button><button class="balRight"
+              id="fav-js-balButRight26">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=line26>
+          <ul class="list">
+            <li class="event" id="fav-js-event26">
+              <div>
+                <div class="time11 time" id="fav-js-time26">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer26">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr27">
+          <div class="balButTh" id="fav-js-balButTh27">
+            <button class="balLeft" id="fav-js-balButLeft27">詳細</button><button class="balRight"
+              id="fav-js-balButRight27">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line27>
+          <ul class="list">
+            <li class="event" id="fav-js-event27">
+              <div>
+                <div class="time11 time" id="fav-js-time27">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer27">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr28">
+          <div class="balButTh" id="fav-js-balButTh28">
+            <button class="balLeft" id="fav-js-balButLeft28">詳細</button><button class="balRight"
+              id="fav-js-balButRight28">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line28>
+          <ul class="list">
+            <li class="event" id="fav-js-event28">
+              <div>
+                <div class="time11 time" id="fav-js-time28">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer28">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr29">
+          <div class="balButTh" id="fav-js-balButTh29">
+            <button class="balLeft" id="fav-js-balButLeft29">詳細</button><button class="balRight"
+              id="fav-js-balButRight29">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line29>
+          <ul class="list">
+            <li class="event" id="fav-js-event29">
+              <div>
+                <div class="time11 time" id="fav-js-time29">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer29">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr30">
+          <div class="balButTh" id="fav-js-balButTh30">
+            <button class="balLeft" id="fav-js-balButLeft30">詳細</button><button class="balRight"
+              id="fav-js-balButRight30">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line30>
+          <ul class="list">
+            <li class="event" id="fav-js-event30">
+              <div>
+                <div class="time11 time" id="fav-js-time30">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer30">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr31">
+          <div class="balButTh" id="fav-js-balButTh31">
+            <button class="balLeft" id="fav-js-balButLeft31">詳細</button><button class="balRight"
+              id="fav-js-balButRight31">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line31>
+          <ul class="list">
+            <li class="event" id="fav-js-event31">
+              <div>
+                <div class="time11 time" id="fav-js-time31">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer31">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr32">
+          <div class="balButTh" id="fav-js-balButTh32">
+            <button class="balLeft" id="fav-js-balButLeft32">詳細</button><button class="balRight"
+              id="fav-js-balButRight32">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line32>
+          <ul class="list">
+            <li class="event" id="fav-js-event32">
+              <div>
+                <div class="time11 time" id="fav-js-time32">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer32">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr33">
+          <div class="balButTh" id="fav-js-balButTh33">
+            <button class="balLeft" id="fav-js-balButLeft33">詳細</button><button class="balRight"
+              id="fav-js-balButRight33">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line33>
+          <ul class="list">
+            <li class="event" id="fav-js-event33">
+              <div>
+                <div class="time11 time" id="fav-js-time33">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer33">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr34">
+          <div class="balButTh" id="fav-js-balButTh34">
+            <button class="balLeft" id="fav-js-balButLeft34">詳細</button><button class="balRight"
+              id="fav-js-balButRight34">お気に入り</button>
+          </div>
+        </div>
+        <tr class=line id=fav-line34>
+          <ul class="list">
+            <li class="event" id="fav-js-event34">
+              <div>
+                <div class="time11 time" id="fav-js-time34">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer34">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+        <div class="balButTr" id="fav-js-balButTr35">
+          <div class="balButTh" id="fav-js-balButTh35">
+            <button class="balLeft" id="fav-js-balButLeft35">詳細</button><button class="balRight"
+              id="fav-js-balButRight35">お気に入り</button>
+          </div>
+        </div>
+        <tr clss=line id=fav-line35>
+          <ul class="list">
+            <li class="event" id="fav-js-event35">
+              <div>
+                <div class="time11 time" id="fav-js-time35">
+                  10:00-10:30
+                </div>
+                <div class="performer" id="fav-performer35">
+                  a--
+                </div>
+              </div>
+            </li>
+          </ul>
+        </tr>
+      </div>
+    </div>
+    <br><br><br><br>
+    </div>
+    <div id="fav-sub2">
+      <tr clss=line id=fav-line51>
+        <ul class="list">
+          <li class="event" id="fav-js-event51">
+            <div class="time11 time" id="fav-js-time51">
+              10:00-10:30
+            </div>
+            <div class="performer" id="fav-performer51">
+              開会式
+              <div class="balButTr" id="fav-js-balButTr51">
+                <div class="balButTh" id="fav-js-balButTh51">
+                  <button class="balLeft" id="fav-js-balButLeft51">詳細</button><button class="balRight"
+                    id="fav-js-balButRight51">お気に入り</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </tr>
+
+      <tr clss=line id=fav-line52>
+        <ul class="list">
+          <li class="event" id="fav-js-event52">
+            <div class="time11 time" id="fav-js-time52">
+              10:30-10:00
+            </div>
+            <div class="performer" id="fav-performer52">
+              a--
+              <div class="balButTr" id="fav-js-balButTr52">
+                <div class="balButTh" id="fav-js-balButTh52">
+                  <button class="balLeft" id="fav-js-balButLeft52">詳細</button><button class="balRight"
+                    id="fav-js-balButRight52">お気に入り</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </tr>
+
+      <tr clss=line id=fav-line53>
+        <ul class="list">
+          <li class="event" id="fav-js-event53">
+            <div class="time11 time" id="fav-js-time53">
+              10:00-10:30
+            </div>
+            <div class="performer" id="fav-performer53">
+              a--
+              <div class="balButTr" id="fav-js-balButTr53">
+                <div class="balButTh" id="fav-js-balButTh53">
+                  <button class="balLeft" id="fav-js-balButLeft53">詳細</button><button class="balRight"
+                    id="fav-js-balButRight53">お気に入り</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </tr>
+      <tr clss=line id=fav-line54>
+        <ul class="list">
+          <li class="event" id="fav-js-event54">
+            <div class="time11 time" id="fav-js-time54">
+              10:00-10:30
+            </div>
+            <div class="performer" id="fav-performer54">
+              a--
+              <div class="balButTr" id="fav-js-balButTr54">
+                <div class="balButTh" id="fav-js-balButTh54">
+                  <button class="balLeft" id="fav-js-balButLeft54">詳細</button><button class="balRight"
+                    id="fav-js-balButRight54">お気に入り</button>
+                </div>
+              </div>
+          </li>
+        </ul>
+      </tr>
+
+      <tr clss=line id=fav-line55>
+        <ul class="list">
+          <li class="event" id="fav-js-event55">
+            <div class="time11 time" id="fav-js-time55">
+              10:00-10:30
+            </div>
+            <div class="performer" id="fav-performer55">
+              a--
+              <div class="balButTr" id="fav-js-balButTr55">
+                <div class="balButTh" id="fav-js-balButTh55">
+                  <button class="balLeft" id="fav-js-balButLeft55">詳細</button><button class="balRight"
+                    id="fav-js-balButRight55">お気に入り</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </tr>
+
+      <tr clss=line id=fav-line56>
+        <ul class="list">
+          <li class="event" id="fav-js-event56">
+            <div>
+              <div class="time11 time" id="fav-js-time56">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer56">
+                a--
+                <div class="balButTr" id="fav-js-balButTr56">
+                  <div class="balButTh" id="fav-js-balButTh56">
+                    <button class="balLeft" id="fav-js-balButLeft56">詳細</button><button class="balRight"
+                      id="fav-js-balButRight56">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </tr>
+
+      <tr clss=line id=fav-line57>
+        <ul class="list">
+          <li class="event" id="fav-js-event57">
+            <div>
+              <div class="time11 time" id="fav-js-time57">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer57">
+                a--
+                <div class="balButTr" id="fav-js-balButTr57">
+                  <div class="balButTh" id="fav-js-balButTh57">
+                    <button class="balLeft" id="fav-js-balButLeft57">詳細</button><button class="balRight"
+                      id="fav-js-balButRight57">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </tr>
+
+      <tr clss=line id=line58>
+        <ul class="list">
+          <li class="event" id="js-event58">
+            <div>
+              <div class="time11 time" id="js-time58">
+                10:00-10:30
+              </div>
+              <div class="performer" id="performer58">
+                a--
+                <div class="balButTr" id="js-balButTr58">
+                  <div class="balButTh" id="js-balButTh58">
+                    <button class="balLeft" id="js-balButLeft58">詳細</button><button class="balRight"
+                      id="js-balButRight58">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </tr>
+
+
+      <tr clss=line id=fav-line59>
+        <ul class="list">
+          <li class="event" id="fav-js-event59">
+            <div>
+              <div class="time11 time" id="fav-js-time59">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer59">
+                a--
+                <div class="balButTr" id="fav-js-balButTr59">
+                  <div class="balButTh" id="fav-js-balButTh59">
+                    <button class="balLeft" id="fav-js-balButLeft59">詳細</button><button class="balRight"
+                      id="fav-js-balButRight59">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+          </li>
+        </ul>
+      </tr>
+
+
+      <tr clss=line id=fav-line60>
+        <ul class="list">
+          <li class="event" id="fav-js-event60">
+            <div>
+              <div class="time11 time" id="fav-js-time60">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer60">
+                a--
+                <div class="balButTr" id="fav-js-balButTr60">
+                  <div class="balButTh" id="fav-js-balButTh60">
+                    <button class="balLeft" id="fav-js-balButLeft60">詳細</button><button class="balRight"
+                      id="fav-js-balButRight60">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+          </li>
+        </ul>
+      </tr>
+
+      <tr clss=line id=fav-line61>
+        <ul class="list">
+          <li class="event" id="fav-js-event61">
+            <div>
+              <div class="time11 time" id="fav-js-time61">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer61">
+                a--
+                <div class="balButTr" id="fav-js-balButTr61">
+                  <div class="balButTh" id="fav-js-balButTh61">
+                    <button class="balLeft" id="fav-js-balButLeft61">詳細</button><button class="balRight"
+                      id="fav-js-balButRight61">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </tr>
+
+      <tr clss=line id=fav-line62>
+        <ul class="list">
+          <li class="event" id="fav-js-event62">
+            <div>
+              <div class="time11 time" id="fav-js-time62">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer62">
+                a--
+                <div class="balButTr" id="fav-js-balButTr62">
+                  <div class="balButTh" id="fav-js-balButTh62">
+                    <button class="balLeft" id="fav-js-balButLeft62">詳細</button><button class="balRight"
+                      id="fav-js-balButRight62">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </tr>
+
+      <tr clss=line id=fav-line63>
+        <ul class="list">
+          <li class="event" id="fav-js-event63">
+            <div>
+              <div class="time11 time" id="fav-js-time63">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer63">
+                a--
+                <div class="balButTr" id="fav-js-balButTr63">
+                  <div class="balButTh" id="fav-js-balButTh63">
+                    <button class="balLeft" id="fav-js-balButLeft63">詳細</button><button class="balRight"
+                      id="fav-js-balButRight63">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </tr>
+
+      <tr clss=line id=fav-line64>
+        <ul class="list">
+          <li class="event" id="fav-js-event64">
+            <div>
+              <div class="time11 time" id="fav-js-time64">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer64">
+                a--
+                <div class="balButTr" id="fav-js-balButTr64">
+                  <div class="balButTh" id="fav-js-balButTh64">
+                    <button class="balLeft" id="fav-js-balButLeft64">詳細</button><button class="balRight"
+                      id="fav-js-balButRight64">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </tr>
+
+      <tr clss=line id=fav-line65>
+        <ul class="list">
+          <li class="event" id="fav-js-event65">
+            <div>
+              <div class="time11 time" id="fav-js-time65">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer65">
+                a--
+                <div class="balButTr" id="fav-js-balButTr65">
+                  <div class="balButTh" id="fav-js-balButTh65">
+                    <button class="balLeft" id="fav-js-balButLeft65">詳細</button><button class="balRight"
+                      id="fav-js-balButRight65">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </tr>
+
+      <tr clss=line id=fav-line66>
+        <ul class="list">
+          <li class="event" id="fav-js-event66">
+            <div>
+              <div class="time11 time" id="fav-js-time66">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer66">
+                a--
+                <div class="balButTr" id="fav-js-balButTr66">
+                  <div class="balButTh" id="fav-js-balButTh66">
+                    <button class="balLeft" id="fav-js-balButLeft66">詳細</button><button class="balRight"
+                      id="fav-js-balButRight66">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </tr>
+
+      <tr clss=line id=fav-line67>
+        <ul class="list">
+          <li class="event" id="fav-js-event67">
+            <div>
+              <div class="time11 time" id="fav-js-time67">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer67">
+                a--
+                <div class="balButTr" id="fav-js-balButTr67">
+                  <div class="balButTh" id="fav-js-balButTh67">
+                    <button class="balLeft" id="fav-js-balButLeft67">詳細</button><button class="balRight"
+                      id="fav-js-balButRight67">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </tr>
+
+      <tr clss=line id=fav-line68>
+        <ul class="list">
+          <li class="event" id="fav-js-event68">
+            <div>
+              <div class="time11 time" id="fav-js-time68">
+                10:00-10:30
+              </div>
+              <div class="performer" id="fav-performer68">
+                a--
+                <div class="balButTr" id="fav-js-balButTr68">
+                  <div class="balButTh" id="fav-js-balButTh68">
+                    <button class="balLeft" id="fav-js-balButLeft68">詳細</button><button class="balRight"
+                      id="fav-js-balButRight68">お気に入り</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </tr>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+
+  </ons-page>
+
+  <script type="text/javascript" src="js/clover_gettime.js"></script>
+  <!-- <script type="text/javascript" src="js/clover_changeTable.js"></script>-->
+  <script type="text/javascript" src="timetable_ver5.js"></script>
+  <script type="text/javascript" src="js/clover_changeStage.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="lib/onsenui/js/onsenui.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+
+
+
+</body>
+
+</html>
+
+
+<!--
+timetable_var3.jsを導入するために変更した点
+上にピン止めするためのtableを追加しました
+メインテーブルのbuttonタグに対してid="fav_button[0~17]"を追加しました
+参照するjsファイルをver2=>ver3にしました
+-->
+
+
+<!--9月2日へ向けて
+バグの修正のためにしなければならない変更
+★サブステージの詳細ページの追加
+detailsは数字を増やせばおｋ
+★サブステージのピン止め実装
+ピン止め部分のhtmlを追加する
+ピン止め部分のtableにdivタグを追加。（これによるピン止め機能の変化あるかな？)
+そのdivタグをgetElementsByClassNameして、そのそれぞれにstyle.display="block","none"をjudgeの値にあわせて適宜つけていく
+★ボタンの星の色がおかしい
+class指定だと扱いにくいのでよければidで扱うようにしたい
+idで扱うようにしてから、timetable_ver3.jsの中のhide関数にclover_buttonのなかの一部を埋め込めばいい。
+（グローバルスコープを利用。)
+★時間の帯を表示する
+ちょっと関係ないですけど30分ピッタリに対応していない気がします
+class:eventがあるところにidを追加する(js-event[0~35])
+clover_gettime.jsのif文の中に以下の2文を追加すればひとまず色はつく
+    document.getElementById('js-event1').style.backgroundColor='#FFD700';
+    document.getElementById('performer1').style.backgroundColor='#FFD700';
+★heightがまじでわからん！！
+
+9月2日以降の変更点
+メインステージ、サブステージの詳細ページを書こうdivタグにclassを指定
+-->

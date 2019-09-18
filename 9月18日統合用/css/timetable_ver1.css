@@ -1,0 +1,307 @@
+
+.segment{
+    width:100%;
+}
+
+/*それぞれの表について*/
+#main{
+    display:block;
+    overflow:auto;
+    height: 100vh;
+}
+#main1{
+    display:block;
+    overflow:auto;
+    height: 100vh;
+}
+#main2{
+    display:none;
+    overflow:auto;
+    height: 100vh;
+}
+#mainStageName{
+    
+    display:block;
+    background-color:rgb(15, 252, 252);
+}
+#subStageName{
+    display:none;
+    background-color:rgb(185, 23, 226);
+}
+#planningName{
+    display:none;
+    background-color:rgb(15, 252, 15);
+}
+#sub{
+    display:none;
+    overflow:auto;
+    height: 100vh;
+}
+#sub1{
+    overflow:auto;
+    height: 100vh;
+}
+#sub2{
+    display:none;
+    overflow:auto;
+    height: 100vh;
+}
+#planning{
+    display:none;
+    overflow:auto;
+    height: 100vh;
+}
+#planning1{
+    overflow:auto;
+    height: 100vh;
+}
+#planning2{
+    display:none;
+    overflow:auto;
+    height: 100vh;
+}
+#favorite{
+    display:none;
+    overflow:scroll;
+    height: 100vh;
+}
+
+
+
+/*吹き出しボタン　始まり*/
+.balButTr{
+    position: relative;
+}
+.balButTh{
+    position: absolute;
+    border:0px;
+    padding:0px;
+}
+.balLeft{
+    /*文字の色*/
+    color:rgb(255,255,255);
+    /*吹き出しの大きさ調整*/
+    width: 60px; /* 幅 これは画面サイズで動かせてない*/
+    height:5vh;/*高さ　vh:画面サイズに対する割合*/
+    padding: 1px; /* ふきだし内の余白 */
+    margin: 0px; /* 上 左右 下のマージン */
+
+    /*吹き出しの位置調整*/
+    position: relative;
+    
+    left:35vw;
+    top:-6.5vh;
+
+    /*吹き出しの装飾*/
+    text-align: center; /* テキストの揃え */
+    background: rgb(0, 0, 0); /* 背景色 */
+    border-right-width: 0.5px;
+    border-right-color:rgb(255, 255, 255);
+    border-left: 0px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top:0px;
+    border-bottom:0px;
+
+
+
+}
+.balLeft::before{
+    content:'';
+    position: absolute;
+    bottom:-3vh;
+    border:1.5vh solid transparent;
+    border-top-color:rgb(0, 0, 0);
+    left:100%;
+    margin-left:-1.5vh;
+}
+.balRight{
+    /*文字の色*/
+    color:rgb(255,255,255);
+    /*吹き出しの大きさ調整*/
+    width: 100px; /* 幅  これは画面サイズで動かせてない*/
+    height:5vh;/*高さ　vh:画面サイズに対する割合*/
+    padding: 1px; /* ふきだし内の余白 */
+    margin: 0px; /* 上 左右 下のマージン */
+
+    /*吹き出しの位置調整*/
+
+    position: relative;
+        
+    left:35vw;
+    top:-6.5vh;
+
+    /*吹き出しの装飾*/
+    text-align: center; /* テキストの揃え */
+    background: rgb(0, 0, 0); /* 背景色 */
+    border:0px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+}
+.balRight::before{
+    content:'';
+    position: absolute;
+    bottom:-3vh;
+    border:1.5vh solid transparent;
+    border-top-color:rgb(0, 0, 0);
+    right:100%;
+    margin-right:-1.5vh;
+}
+/*吹き出しボタン　終わり*/
+
+    
+.event{
+    background-color:rgb(253, 253, 253);
+   border:groove grey;
+    box-shadow:0px 0.3vw 0.6vw;
+}
+
+.event:hover{ background-color:rgb(216, 216, 216) !important;
+    box-shadow: none;
+    transform: translateY(0.1vw);
+}
+
+.stage{
+    height:100px;
+    font-size:70px;
+}
+
+
+    
+.maintable{
+    margin: 0 auto;         /* 余白の削除  中央ぞろえ*/
+    padding: 0;        /* 余白の削除 */
+    width:100%;
+    height:100%;
+    position:relative;
+    border:10px rgb(213, 247, 135) solid;
+    }
+
+.subtable{
+ margin: 0 auto;         /* 余白の削除  中央ぞろえ*/
+padding: 0;        /* 余白の削除 */
+width:100%;
+height:100%;
+position:relative;
+border:10px rgb(213, 247, 135) solid;
+}
+.subtable,th{
+border:10px rgb(213, 247, 135) solid;
+}
+
+
+.time{
+    background-color: rgb(32, 250, 141);
+    width:25%;
+    height:50%;
+}
+.performer{
+    text-align:center;
+    height:50px;
+}
+
+
+
+
+
+.details{
+display:none;
+/*位置をちょっといじってみます
+top:30%;
+right:40%;*/
+animation: details 5s cubic-bezier(.4,0,.2,1);
+position:absolute; 
+background-color:rgba(20, 218, 191, 0.9);
+color:black;
+font-weight:bold;
+z-index:1;
+position:fixed;
+/*background-size:cover;*//*内容に合わせて大きさを変えてくれます*/
+
+/*スクロール可能にする 以下の5つが追加したもの*/
+top:3.5vh;
+bottom:3.5vh;
+left:10.5vw;
+right:10.5vw;
+overflow: auto;
+
+padding-right:3%;
+padding-left: 3%;
+padding-bottom:3%;
+    opacity:0;
+    animation: example 0.5s ease 0.4s 1 forwards;
+}
+@keyframes example {
+100% {
+opacity: 1;
+}    }     
+     
+
+.text{
+    padding-top: 3%;
+    top:auto;
+    float: left;
+    width:50%;
+}
+.close_button{
+
+    position:fixed;/*ボタンの配置ですが、テキストの初めに二回改行することで
+                    無理やり被らなくしています*/
+    width: 10%;
+    height:5%;
+}
+
+.content{
+    padding-top: 3%;
+    padding-right:5%;
+    text-justify: auto;
+    float:left;
+    width:45%; /*画像にはもともと「サイズがない？」からか
+    　　　　　　　サイズを設定してあげないと background-size:coverが
+                反応しないみたいですtextとcontentのwidthを合わせて１００％
+                以内に抑えないと勝手に改行します
+                ただしなぜか画像のサイズを変えられません*/  
+}
+
+.kikakutitle{
+    text-decoration:underline ;
+  }
+  .kikaku{
+    border-radius: 10%;
+    
+    padding :5vw 5vh;
+    width:auto;
+    height:auto;
+    color:rgb(255, 255, 255);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:4vh;
+  }
+  .kikaku1{
+    background-color:rgb(252, 199, 101);
+  }
+  .kikaku2{
+    background-color:rgb(248, 176, 188);
+  }
+  .kikaku3{
+    background-color:rgb(106, 106, 255);
+  }
+  .kikaku4{
+    background-color:rgb(92, 255, 92);
+  }
+  .kikaku5{
+    background-color:rgb(252, 199, 101);
+  }
+  .kikaku6{
+    background-color:rgb(248, 176, 188);
+  }
+  th,td{
+    border:1px solid rgb(184, 184, 184);
+    box-sizing:border-box;
+  }
+  table{
+    background-color:rgb(241, 255, 203);
+  }
+  .adult-title{
+    border:none;
+  }
