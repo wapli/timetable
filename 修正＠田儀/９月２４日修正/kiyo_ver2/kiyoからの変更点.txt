@@ -1,0 +1,20 @@
+<<index.jsへの変更>>
+corodva.jsを呼び出すタグをコメントアウト
+httpsから始まるURLを参照するタグをコメントアウト
+clover_getTImeはちょっと外させてもらう（timetable_ver6のバグを探すため）
+js-balButRight40　←favが抜けてる
+js-balButRight41　←favが抜けてる
+js-balButRight45　←favが抜けてる
+
+
+<<timetable_ver6への変更>>
+console.logを削除
+<<clover_changeStageへの変更>>
+if(event.target.id==="Tab2"){}でくくってみる→とりあえずエラーは消える：うまく動いている保証はない
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+以下バグの原因の予測とか
+
+changeStageのバグはinitのタイミングによってはまだDOMツリーが構成されていないからnullをとるからエラーになる
+→initをifで囲う

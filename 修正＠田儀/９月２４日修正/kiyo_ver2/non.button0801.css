@@ -1,0 +1,366 @@
+.cp_actab {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 auto;
+	color: #ffffff;
+}
+.cp_actab input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.cp_actab label {
+	font-weight: bold;
+	line-height: 3;
+	position: relative;
+	display: block;
+	padding: 0 0 0 4em;
+	cursor: pointer;
+	margin: 0 0 2px 0;
+	background: #50b0e7;
+}
+.cp_actab .cp_actab-content {
+	overflow: hidden;
+	max-height: 0;
+	-webkit-transition: max-height 0.35s;
+	transition: max-height 0.35s;
+	color: #333333;
+	background: #c6e5f1;
+}
+.cp_actab .cp_actab-content p {
+	margin: 1em;
+}
+/* :checked */
+.cp_actab input:checked ~ .cp_actab-content {
+	max-height: 20em;
+}
+/* Icon */
+.cp_actab label::after {
+	line-height: 3;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 3em;
+	height: 3em;
+	-webkit-transition: all 0.35s;
+	transition: all 0.35s;
+	text-align: center;
+}
+.cp_actab input[type=checkbox] + label::after {
+	content: '▲';
+}
+.cp_actab input[type=checkbox]:checked + label::after {
+	transform: rotate(180deg);
+}
+
+
+.cp_actab-content>button{
+  height:60px;
+  width:100%;
+ text-align:left;
+ font-size:100%;
+ border:solid 0.5px;
+ border-color: #67c5ff;
+}
+
+
+.cp_actab-content>button:hover{
+  background-color:mediumturquoise;
+}
+
+
+
+
+
+
+
+
+.list_title{
+  position:relative;
+  height:50px;
+  
+  margin: 0px auto;
+  background-color: rgba(12, 19, 19, 0.4);  
+}
+#list_title{
+  position:absolute;
+  top:14px;
+  left:80px;
+  color: #edf1f3;
+}
+.aa{
+  transition: all 300ms 0s ease;
+}
+.expandable-content{
+  padding:0px;
+}
+.list_cate_des{
+  display: inline-block;
+  padding: 0.3em 0em;
+  text-decoration: none;
+  left:0px;
+  width:99%;
+  height:90px;
+  color: #67c5ff; 
+  /*文字の色*/
+  border: solid 1px #67c5ff;
+  /*　枠*/
+  border-radius: 3px;
+  /*角の丸み*/
+  transition: .4s;
+  /*アニメーションのスピードらしいけどよくわからん*/
+}
+.list_des {
+    display: inline-block;
+    padding: 0.3em 0em;
+    text-decoration: none;
+    left:0px;
+    width:100%;
+    height:65px;
+    color: #67c5ff; 
+    /*文字の色*/
+    border: solid 1px #67c5ff;
+    /*　枠*/
+    border-radius: 3px;
+    /*角の丸み*/
+    transition: .4s;
+    /*アニメーションのスピードらしいけどよくわからん*/
+    }
+  
+  .li_open.list_des:hover,.list_cate_des:hover
+  {
+    background: #67c5ff;
+    color: white;
+  }
+ 
+  .map{
+    position: relative;
+   
+  }
+  #map{
+    
+     width:100%;
+    
+  }
+
+
+  .obj{ 
+  position:absolute;
+  
+  }
+  #romu{  
+  left:75%;
+ top:76%;
+
+
+}
+
+#ibui{
+  left:50%;
+  top:50%;
+  
+}
+
+.b_size{
+  max-width: 115px;
+  height: auto;
+
+}
+.mogi{
+  display:none;
+}
+.obj_info {
+ 
+  display:none;
+ position:absolute;
+    width:400px;
+    height:auto;
+    border-radius: 10px;/*丸み*/
+ 
+    margin: 1.5em 0;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    background: #FFF;
+    border: solid 3px #555;
+    box-sizing: border-box;
+}
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+@keyframes fadeOut {
+  0% {opacity: 1}
+  100% {opacity: 0}
+}
+
+.obj_info_close {
+  overflow: auto;
+  display:none;
+  position :absolute;
+  margin: auto;
+  
+  color:white;
+/* border: 2px solid #0094D6; */
+  border-radius: 10px;
+  background:rgb(90, 139, 231);
+  height: 0px;
+  width:0px;
+/*animation:１名前 ２時間　３変化率(ease、linear、ease-out、ease-in-out）
+４④ animation-delay
+アニメーションの開始をいくら遅らせるかを指定。
+5 animation-iteration-count
+アニメーションを何回繰り返すかを指定。
+6 animation-direction
+繰り返し時、往復処理をするかを指定。*/
+  animation: fadeOut 0.3s ease 0s 1 normal;
+  margin-bottom: 2em;
+  /*box-shadow: 6px 6px 0px 0px #318c30;         /* 吹き出し本体の影 */
+  box-shadow: 6px 6px 0px 0px rgb(4, 10, 85);
+}
+
+/*
+.hukidasi:after {
+
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+  margin: 0 auto;
+   reight　右
+     left 左
+　     top　上
+　     bottom　下
+     つけたい三角の位置を消す
+  border-top: 15px solid rgba(0, 0, 0, 0.616);
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+}
+*/
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+  margin:0;
+  
+
+}ul{list-style-type:none;
+    margin:0;
+    padding:0;
+  }
+
+  .li-close{
+  width:0px;
+  height:0px;
+  }
+
+
+  
+.Heart{
+  color:pink;
+  animation: anime3 1.5s alternate infinite;
+ 
+}
+@keyframes anime3{
+  0% {transform: rotateY(0deg);}
+  100% {transform: rotateY(360deg);}
+}
+/*灰色ハート*/
+ .heart1 {
+  background:none;
+  border:0;
+  width: 100px;
+  height: 100px;
+  position:absolute;
+  left: 375px;
+  top: 20px;
+  transform: translate(-50%, -50%);
+  background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+/*アニメーションハート*/
+.heart2 {
+  background:none;
+  border:0;
+  width: 100px;
+  height: 100px;
+  position:absolute;
+  left: 375px;
+  top: 20px;
+  transform: translate(-50%, -50%);
+  background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  animation:fave-heart 1s steps(28);
+  animation-fill-mode:both;
+  }
+  @keyframes fave-heart {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -2800px 0;
+    }
+}
+
+.obj_info:before {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  margin-left: -15px;
+  border: 12px solid transparent;
+  border-top: 13px solid #FFF;
+  z-index: 2;
+}
+/*三角の外枠*/
+.obj_info:after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-top: 14px solid #555;
+  z-index: 1;
+}
+/*吹き出し内の写真*/
+.photo{
+  float: left;
+  width:100px;
+  height:100px;
+  border-radius: 10px;/*丸み*/
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.moji{
+font-family:"ヒラギノ丸ゴ Pro";
+}
+​
+.tatle{
+font-size: 200%;
+margin-left: 105px;
+font-weight:bold;
+text-align:left;
+}
+​
+.club_name{
+right:0px;
+font-size: 120%;
+}
+.sentence{
+margin-left: 105px;
+text-align:left;
+}
